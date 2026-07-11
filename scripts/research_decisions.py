@@ -25,8 +25,12 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from match_predict.data import parse_fixtures, parse_fixture_totals_odds  # noqa: E402
 from match_predict.decisions import (                                  # noqa: E402
-    decide_for_fixtures, load_config, load_profiles, summarize_day)
+    decide_for_fixtures, load_config, load_profiles, modes_for_fixtures,
+    summarize_day)
 from match_predict.pipeline import Predictor                            # noqa: E402
+
+_BET_MODE_ALIASES = {"smart": "smart", "high-return": "high_return",
+                     "high_return": "high_return"}
 
 
 def _feed_timestamp(path: str) -> str | None:
@@ -45,6 +49,10 @@ def main(argv=None):
     ap.add_argument("--artifacts", default="artifacts")
     ap.add_argument("--data-root", default="football-data")
     ap.add_argument("--out", default="outputs/decisions/research.json")
+    ap.add_argument("--bet-mode", choices=["smart", "high-return", "compare"],
+                    default=None,
+                    help="run the Smart Bet / High Return decision mode(s) "
+                         "instead of the full market scan (bet-funcuanlty §19)")
     args = ap.parse_args(argv)
 
     cfg = load_config(args.config)
@@ -68,6 +76,11 @@ def main(argv=None):
     odds_ts = _feed_timestamp(fixtures_path)
     now = pd.Timestamp.now("UTC").isoformat()
     profiles = load_profiles(os.path.join(args.artifacts, "market_profiles.json"))
+
+    if args.bet_mode:
+        _run_modes(pred, fx, args, cfg, ou25, profiles, odds_ts, now)
+        return
+
     decisions = decide_for_fixtures(pred, fx, config=cfg, odds_totals=ou25,
                                     market_profiles=profiles,
                                     odds_timestamp=odds_ts, decision_time=now)
@@ -85,6 +98,30 @@ def main(argv=None):
           "normal, successful output; here every selection is rejected — most "
           "for INSUFFICIENT_HISTORICAL_SAMPLE (no per-market validation profiles "
           "are loaded yet) and for failing the conservative EV / edge thresholds.")
+
+
+def _run_modes(pred, fx, args, cfg, ou25, profiles, odds_ts, now):
+    """Run the requested bet MODE(S) and write a mode-keyed research file."""
+    modes = ["smart", "high_return"] if args.bet_mode == "compare" \
+        else [_BET_MODE_ALIASES[args.bet_mode]]
+    results = modes_for_fixtures(pred, fx, modes, config=cfg, odds_totals=ou25,
+                                 market_profiles=profiles,
+                                 odds_timestamp=odds_ts, decision_time=now)
+    payload = {m: {"summary": r["summary"],
+                   "selections": [s.to_dict() for s in r["selections"]]}
+               for m, r in results.items()}
+    out = args.out.replace(".json", f".{args.bet_mode}.json")
+    os.makedirs(os.path.dirname(out), exist_ok=True)
+    with open(out, "w") as fh:
+        json.dump(payload, fh, indent=2, default=str)
+    for m, r in results.items():
+        print(f"\n=== {m} ===")
+        print(json.dumps(r["summary"], indent=2, default=str))
+    print(f"\nwrote {out}")
+    print("NOTE: advisory research only — no bet is placed, no outcome is "
+          "certain, and neither mode is forced to pick a selection. 'No bet' is "
+          "a normal result. High-return selections usually LOSE more often than "
+          "they win; the value is in the price, not the hit rate.")
 
 
 if __name__ == "__main__":
