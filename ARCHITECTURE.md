@@ -18,33 +18,39 @@ chronological out-of-time periods.
 
 ---
 
-## 0. Headline result (out-of-time, 2025/26 season, 2,058 matches, 6 leagues)
+## 0. Headline result (out-of-time, 7,626 matches, test from 2025-08-01)
+
+Trained through 2026-05-31 · 22 leagues · 39 features · served model
+`ensemble_cal`. Reproduce with `python scripts/run_backtest.py`
+(numbers mirrored in [`reports/model_scorecard.md`](reports/model_scorecard.md)).
 
 | model | log-loss | brier | RPS | ECE | acc |
 |---|---|---|---|---|---|
-| **market** (de-vigged bookmaker) | **0.9693** | 0.5764 | 0.1943 | 0.0337 | 0.538 |
-| dixon_coles | 0.9991 | 0.5961 | 0.2032 | 0.0283 | 0.512 |
-| gbm (LightGBM) | 0.9730 | 0.5787 | 0.1945 | 0.0337 | 0.533 |
-| ensemble (stacked) | 0.9716 | 0.5785 | 0.1951 | 0.0250 | 0.532 |
-| **ensemble + calibration** | 0.9717 | 0.5786 | 0.1951 | **0.0245** | 0.532 |
+| market (de-vigged bookmaker) | 1.0026 | 0.5998 | 0.2038 | 0.0135 | 0.506 |
+| dixon_coles | 1.0539 | 0.6306 | 0.2182 | 0.0267 | 0.468 |
+| gbm (LightGBM) | 1.0055 | 0.6016 | 0.2044 | 0.0134 | 0.504 |
+| ensemble (stacked) | 1.0025 | 0.5998 | 0.2036 | 0.0124 | 0.506 |
+| **ensemble + calibration** (served) | **1.0025** | **0.5998** | **0.2036** | 0.0125 | **0.506** |
 
 **Reading of the result.** The pre-match market line is an exceptionally strong
-forecaster. On this test season it has the **lowest (best) log-loss (0.9693)**;
-the ensemble's is 0.9717 — **~0.0024 nats worse**, not a match. The ensemble's
-top-label ECE is numerically lower (0.025 vs 0.034), but neither difference is
-backed by a paired bootstrap confidence interval or significance test, so we do
-**not** claim the ensemble beats, matches, or is better calibrated than the
-market. Honest reading: without post-match information the ensemble is
-*competitive with, but does not outperform,* the bookmaker line on the primary
-proper scoring rule. The reported ensemble *influence* figures
-(market 0.56 / GBM 0.31 / Dixon-Coles 0.13) are **normalised magnitudes of the
-logistic meta-learner's coefficients, not literal mixture weights** — they show
-the meta-learner anchoring on the market, but do not sum-to-one as probabilities
-over base models.
+forecaster. The served ensemble is *numerically* the best on log-loss (1.0025 vs
+the market's 1.0026), but a **paired block-bootstrap grouped by match-day** puts
+the difference at **Δ −0.00007, 95% CI −0.0019…+0.0019, p = 0.96** — the interval
+includes zero. So we do **not** claim the ensemble beats the market: it **matches**
+the bookmaker line and is not statistically distinguishable from it. (Dixon-Coles
+and GBM *are* distinguishable — both significantly worse than the market: Δ
++0.051, p≈0 and Δ +0.003, p=0.017 respectively.) Calibration, not a headline win,
+is the objective. The reported ensemble *influence* figures are **normalised
+magnitudes of the logistic meta-learner's coefficients, not literal mixture
+weights** — they show the meta-learner anchoring on the market, but do not
+sum-to-one as probabilities over base models.
 
-> **Caveat (not yet implemented):** paired bootstrap CIs and a Diebold–Mariano
-> test on the log-loss differences. Until those exist, treat all model-vs-market
-> orderings on this table as *numerical only*, not statistically established.
+> **Significance testing (implemented).** Paired per-match log-loss differences
+> vs the de-vigged market, with a block bootstrap grouped by match-day, live in
+> `match_predict/evaluation/significance.py` and are surfaced in the app's Models
+> tab and [`reports/market_significance_test.md`](reports/market_significance_test.md).
+> When the paired interval includes zero we report "not distinguishable", never
+> "beats the market".
 
 ---
 
@@ -117,8 +123,8 @@ Bayesian hierarchical goal model) without touching the others.
 
 ```
 Match-predict/
-├── football-data/            # training data: 6 leagues × ~30 seasons (1993–2025)
-│   ├── england/ france/ germany/ italy/ spain/ portugal/
+├── football-data/            # training data: 22 divisions × ~30 seasons (1993–2026)
+│   ├── england/ france/ germany/ italy/ spain/ portugal/ belgium/ …
 ├── testing/                  # out-of-time hold-out: 2025/26 season, all leagues
 ├── match_predict/            # the package
 │   ├── data/
