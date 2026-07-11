@@ -1,0 +1,2551 @@
+{
+  "summary": {
+    "fixtures": 12,
+    "selections_evaluated": 60,
+    "qualified": 0,
+    "watchlist": 0,
+    "no_bet": 60,
+    "rejection_reason_counts": {
+      "INSUFFICIENT_HISTORICAL_SAMPLE": 60,
+      "NO_POSITIVE_CONSERVATIVE_EV": 58,
+      "EDGE_BELOW_THRESHOLD": 54,
+      "MODEL_DISAGREEMENT_TOO_HIGH": 20,
+      "PRICE_BELOW_MINIMUM": 3,
+      "PRICE_ABOVE_VALIDATED_RANGE": 1
+    }
+  },
+  "decisions": [
+    {
+      "fixture_id": "Spain-LL2|2026-05-30|Ceuta|Albacete",
+      "league": "Spain-LL2",
+      "home_team": "Ceuta",
+      "away_team": "Albacete",
+      "kickoff": "2026-05-30",
+      "decision_time": "2026-07-11T19:47:19.724911+00:00",
+      "horizon": null,
+      "views": {
+        "pure": {
+          "H": 0.37937497267581,
+          "D": 0.26650166645733825,
+          "A": 0.35412336086685176
+        },
+        "market": {
+          "H": 0.4101621745061008,
+          "D": 0.2899667638392494,
+          "A": 0.29987106165464983
+        },
+        "hybrid": {
+          "H": 0.4070431608549469,
+          "D": 0.30316025750592146,
+          "A": 0.2897965816391316
+        }
+      },
+      "selections": [
+        {
+          "selection": "H",
+          "market": "match_winner",
+          "side_or_line": "H",
+          "offered_odds": 2.3,
+          "model_probability": 0.407,
+          "market_fair_probability": 0.4102,
+          "conservative_probability": 0.3656,
+          "probability_edge": -0.0031,
+          "raw_expected_value": -0.0638,
+          "conservative_expected_value": -0.1591,
+          "confidence_interval": [
+            0.3656,
+            0.4485
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-30|Ceuta|Albacete::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "D",
+          "market": "match_winner",
+          "side_or_line": "D",
+          "offered_odds": 3.2,
+          "model_probability": 0.3032,
+          "market_fair_probability": 0.29,
+          "conservative_probability": 0.2617,
+          "probability_edge": 0.0132,
+          "raw_expected_value": -0.0299,
+          "conservative_expected_value": -0.1625,
+          "confidence_interval": [
+            0.2617,
+            0.3446
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [
+            "model above market by +1.3 pts"
+          ],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-30|Ceuta|Albacete::grp1",
+          "is_primary": false
+        },
+        {
+          "selection": "A",
+          "market": "match_winner",
+          "side_or_line": "A",
+          "offered_odds": 3.1,
+          "model_probability": 0.2898,
+          "market_fair_probability": 0.2999,
+          "conservative_probability": 0.2484,
+          "probability_edge": -0.0101,
+          "raw_expected_value": -0.1016,
+          "conservative_expected_value": -0.2301,
+          "confidence_interval": [
+            0.2484,
+            0.3312
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-30|Ceuta|Albacete::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "OVER_2.5",
+          "market": "over_under_2_5",
+          "side_or_line": "OVER_2.5",
+          "offered_odds": 1.8,
+          "model_probability": 0.5048,
+          "market_fair_probability": 0.5278,
+          "conservative_probability": 0.4634,
+          "probability_edge": -0.0229,
+          "raw_expected_value": -0.0913,
+          "conservative_expected_value": -0.1659,
+          "confidence_interval": [
+            0.4634,
+            0.5463
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-30|Ceuta|Albacete::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "UNDER_2.5",
+          "market": "over_under_2_5",
+          "side_or_line": "UNDER_2.5",
+          "offered_odds": 2.0,
+          "model_probability": 0.4952,
+          "market_fair_probability": 0.4722,
+          "conservative_probability": 0.4537,
+          "probability_edge": 0.0229,
+          "raw_expected_value": -0.0097,
+          "conservative_expected_value": -0.0926,
+          "confidence_interval": [
+            0.4537,
+            0.5366
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [
+            "model above market by +2.3 pts"
+          ],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-30|Ceuta|Albacete::grp4",
+          "is_primary": false
+        }
+      ],
+      "top_scores": [
+        {
+          "score": "1-1",
+          "prob": 0.1438
+        },
+        {
+          "score": "2-1",
+          "prob": 0.0909
+        },
+        {
+          "score": "1-0",
+          "prob": 0.0907
+        },
+        {
+          "score": "0-0",
+          "prob": 0.0793
+        },
+        {
+          "score": "2-0",
+          "prob": 0.0676
+        }
+      ],
+      "data_quality": 1.0,
+      "model_disagreement": 0.0429,
+      "model_version": null,
+      "notes": []
+    },
+    {
+      "fixture_id": "Spain-LL2|2026-05-30|Granada|Sp Gijon",
+      "league": "Spain-LL2",
+      "home_team": "Granada",
+      "away_team": "Sp Gijon",
+      "kickoff": "2026-05-30",
+      "decision_time": "2026-07-11T19:47:19.724911+00:00",
+      "horizon": null,
+      "views": {
+        "pure": {
+          "H": 0.42258796428983436,
+          "D": 0.2645087593290735,
+          "A": 0.31290327638109217
+        },
+        "market": {
+          "H": 0.39996481254732075,
+          "D": 0.2660289476363157,
+          "A": 0.3340062398163637
+        },
+        "hybrid": {
+          "H": 0.3937476996231376,
+          "D": 0.2803211632301956,
+          "A": 0.32593113714666677
+        }
+      },
+      "selections": [
+        {
+          "selection": "H",
+          "market": "match_winner",
+          "side_or_line": "H",
+          "offered_odds": 2.32,
+          "model_probability": 0.3937,
+          "market_fair_probability": 0.4,
+          "conservative_probability": 0.3641,
+          "probability_edge": -0.0062,
+          "raw_expected_value": -0.0865,
+          "conservative_expected_value": -0.1552,
+          "confidence_interval": [
+            0.3641,
+            0.4234
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-30|Granada|Sp Gijon::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "D",
+          "market": "match_winner",
+          "side_or_line": "D",
+          "offered_odds": 3.4,
+          "model_probability": 0.2803,
+          "market_fair_probability": 0.266,
+          "conservative_probability": 0.2507,
+          "probability_edge": 0.0143,
+          "raw_expected_value": -0.0469,
+          "conservative_expected_value": -0.1476,
+          "confidence_interval": [
+            0.2507,
+            0.3099
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [
+            "model above market by +1.4 pts"
+          ],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-30|Granada|Sp Gijon::grp1",
+          "is_primary": false
+        },
+        {
+          "selection": "A",
+          "market": "match_winner",
+          "side_or_line": "A",
+          "offered_odds": 2.75,
+          "model_probability": 0.3259,
+          "market_fair_probability": 0.334,
+          "conservative_probability": 0.2963,
+          "probability_edge": -0.0081,
+          "raw_expected_value": -0.1037,
+          "conservative_expected_value": -0.1851,
+          "confidence_interval": [
+            0.2963,
+            0.3555
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-30|Granada|Sp Gijon::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "OVER_2.5",
+          "market": "over_under_2_5",
+          "side_or_line": "OVER_2.5",
+          "offered_odds": 1.85,
+          "model_probability": 0.5111,
+          "market_fair_probability": 0.5139,
+          "conservative_probability": 0.4815,
+          "probability_edge": -0.0028,
+          "raw_expected_value": -0.0545,
+          "conservative_expected_value": -0.1093,
+          "confidence_interval": [
+            0.4815,
+            0.5407
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-30|Granada|Sp Gijon::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "UNDER_2.5",
+          "market": "over_under_2_5",
+          "side_or_line": "UNDER_2.5",
+          "offered_odds": 1.95,
+          "model_probability": 0.4889,
+          "market_fair_probability": 0.4861,
+          "conservative_probability": 0.4593,
+          "probability_edge": 0.0028,
+          "raw_expected_value": -0.0466,
+          "conservative_expected_value": -0.1044,
+          "confidence_interval": [
+            0.4593,
+            0.5185
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [
+            "model above market by +0.3 pts"
+          ],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-30|Granada|Sp Gijon::grp4",
+          "is_primary": false
+        }
+      ],
+      "top_scores": [
+        {
+          "score": "1-1",
+          "prob": 0.1331
+        },
+        {
+          "score": "1-0",
+          "prob": 0.0844
+        },
+        {
+          "score": "2-1",
+          "prob": 0.0835
+        },
+        {
+          "score": "1-2",
+          "prob": 0.0783
+        },
+        {
+          "score": "0-1",
+          "prob": 0.0783
+        }
+      ],
+      "data_quality": 1.0,
+      "model_disagreement": 0.0192,
+      "model_version": null,
+      "notes": []
+    },
+    {
+      "fixture_id": "Spain-LL2|2026-05-30|Sociedad B|Cultural Leonesa",
+      "league": "Spain-LL2",
+      "home_team": "Sociedad B",
+      "away_team": "Cultural Leonesa",
+      "kickoff": "2026-05-30",
+      "decision_time": "2026-07-11T19:47:19.724911+00:00",
+      "horizon": null,
+      "views": {
+        "pure": {
+          "H": 0.5571206212150517,
+          "D": 0.2503160502753199,
+          "A": 0.19256332850962843
+        },
+        "market": {
+          "H": 0.41797006902358363,
+          "D": 0.28371040404518716,
+          "A": 0.29831952693122926
+        },
+        "hybrid": {
+          "H": 0.40501648230907006,
+          "D": 0.2900015851353158,
+          "A": 0.3049819325556142
+        }
+      },
+      "selections": [
+        {
+          "selection": "H",
+          "market": "match_winner",
+          "side_or_line": "H",
+          "offered_odds": 2.25,
+          "model_probability": 0.405,
+          "market_fair_probability": 0.418,
+          "conservative_probability": 0.3343,
+          "probability_edge": -0.013,
+          "raw_expected_value": -0.0887,
+          "conservative_expected_value": -0.2478,
+          "confidence_interval": [
+            0.3343,
+            0.4757
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "MODEL_DISAGREEMENT_TOO_HIGH",
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-30|Sociedad B|Cultural Leonesa::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "D",
+          "market": "match_winner",
+          "side_or_line": "D",
+          "offered_odds": 3.25,
+          "model_probability": 0.29,
+          "market_fair_probability": 0.2837,
+          "conservative_probability": 0.2193,
+          "probability_edge": 0.0063,
+          "raw_expected_value": -0.0575,
+          "conservative_expected_value": -0.2873,
+          "confidence_interval": [
+            0.2193,
+            0.3607
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "MODEL_DISAGREEMENT_TOO_HIGH",
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [
+            "model above market by +0.6 pts"
+          ],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-30|Sociedad B|Cultural Leonesa::grp1",
+          "is_primary": false
+        },
+        {
+          "selection": "A",
+          "market": "match_winner",
+          "side_or_line": "A",
+          "offered_odds": 3.1,
+          "model_probability": 0.305,
+          "market_fair_probability": 0.2983,
+          "conservative_probability": 0.2343,
+          "probability_edge": 0.0067,
+          "raw_expected_value": -0.0546,
+          "conservative_expected_value": -0.2737,
+          "confidence_interval": [
+            0.2343,
+            0.3757
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "MODEL_DISAGREEMENT_TOO_HIGH",
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [
+            "model above market by +0.7 pts"
+          ],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-30|Sociedad B|Cultural Leonesa::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "OVER_2.5",
+          "market": "over_under_2_5",
+          "side_or_line": "OVER_2.5",
+          "offered_odds": 1.8,
+          "model_probability": 0.4565,
+          "market_fair_probability": 0.5278,
+          "conservative_probability": 0.3858,
+          "probability_edge": -0.0712,
+          "raw_expected_value": -0.1782,
+          "conservative_expected_value": -0.3055,
+          "confidence_interval": [
+            0.3858,
+            0.5273
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "MODEL_DISAGREEMENT_TOO_HIGH",
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-30|Sociedad B|Cultural Leonesa::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "UNDER_2.5",
+          "market": "over_under_2_5",
+          "side_or_line": "UNDER_2.5",
+          "offered_odds": 2.0,
+          "model_probability": 0.5435,
+          "market_fair_probability": 0.4722,
+          "conservative_probability": 0.4727,
+          "probability_edge": 0.0712,
+          "raw_expected_value": 0.0869,
+          "conservative_expected_value": -0.0545,
+          "confidence_interval": [
+            0.4727,
+            0.6142
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "MODEL_DISAGREEMENT_TOO_HIGH",
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [
+            "model above market by +7.1 pts",
+            "raw EV +8.7%"
+          ],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-30|Sociedad B|Cultural Leonesa::grp4",
+          "is_primary": false
+        }
+      ],
+      "top_scores": [
+        {
+          "score": "1-1",
+          "prob": 0.1378
+        },
+        {
+          "score": "0-1",
+          "prob": 0.0983
+        },
+        {
+          "score": "0-0",
+          "prob": 0.0928
+        },
+        {
+          "score": "1-0",
+          "prob": 0.0886
+        },
+        {
+          "score": "1-2",
+          "prob": 0.0808
+        }
+      ],
+      "data_quality": 1.0,
+      "model_disagreement": 0.1014,
+      "model_version": null,
+      "notes": []
+    },
+    {
+      "fixture_id": "Belgium-PL|2026-05-31|Gent|Genk",
+      "league": "Belgium-PL",
+      "home_team": "Gent",
+      "away_team": "Genk",
+      "kickoff": "2026-05-31",
+      "decision_time": "2026-07-11T19:47:19.724911+00:00",
+      "horizon": null,
+      "views": {
+        "pure": {
+          "H": 0.3569460048053574,
+          "D": 0.2660580383986785,
+          "A": 0.3769959567959641
+        },
+        "market": {
+          "H": 0.3229651897924291,
+          "D": 0.24610581404636345,
+          "A": 0.4309289961612075
+        },
+        "hybrid": {
+          "H": 0.3196050505005081,
+          "D": 0.25487396498419473,
+          "A": 0.42552098451529724
+        }
+      },
+      "selections": [
+        {
+          "selection": "H",
+          "market": "match_winner",
+          "side_or_line": "H",
+          "offered_odds": 2.9,
+          "model_probability": 0.3196,
+          "market_fair_probability": 0.323,
+          "conservative_probability": 0.2834,
+          "probability_edge": -0.0034,
+          "raw_expected_value": -0.0731,
+          "conservative_expected_value": -0.1781,
+          "confidence_interval": [
+            0.2834,
+            0.3558
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Belgium-PL|2026-05-31|Gent|Genk::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "D",
+          "market": "match_winner",
+          "side_or_line": "D",
+          "offered_odds": 3.75,
+          "model_probability": 0.2549,
+          "market_fair_probability": 0.2461,
+          "conservative_probability": 0.2187,
+          "probability_edge": 0.0088,
+          "raw_expected_value": -0.0442,
+          "conservative_expected_value": -0.1799,
+          "confidence_interval": [
+            0.2187,
+            0.291
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [
+            "model above market by +0.9 pts"
+          ],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Belgium-PL|2026-05-31|Gent|Genk::grp1",
+          "is_primary": false
+        },
+        {
+          "selection": "A",
+          "market": "match_winner",
+          "side_or_line": "A",
+          "offered_odds": 2.2,
+          "model_probability": 0.4255,
+          "market_fair_probability": 0.4309,
+          "conservative_probability": 0.3893,
+          "probability_edge": -0.0054,
+          "raw_expected_value": -0.0639,
+          "conservative_expected_value": -0.1434,
+          "confidence_interval": [
+            0.3893,
+            0.4617
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Belgium-PL|2026-05-31|Gent|Genk::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "OVER_2.5",
+          "market": "over_under_2_5",
+          "side_or_line": "OVER_2.5",
+          "offered_odds": 1.7,
+          "model_probability": 0.5234,
+          "market_fair_probability": 0.556,
+          "conservative_probability": 0.4872,
+          "probability_edge": -0.0326,
+          "raw_expected_value": -0.1103,
+          "conservative_expected_value": -0.1718,
+          "confidence_interval": [
+            0.4872,
+            0.5596
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Belgium-PL|2026-05-31|Gent|Genk::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "UNDER_2.5",
+          "market": "over_under_2_5",
+          "side_or_line": "UNDER_2.5",
+          "offered_odds": 2.1,
+          "model_probability": 0.4766,
+          "market_fair_probability": 0.444,
+          "conservative_probability": 0.4404,
+          "probability_edge": 0.0326,
+          "raw_expected_value": 0.0009,
+          "conservative_expected_value": -0.0751,
+          "confidence_interval": [
+            0.4404,
+            0.5128
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [
+            "model above market by +3.3 pts",
+            "raw EV +0.1%"
+          ],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Belgium-PL|2026-05-31|Gent|Genk::grp4",
+          "is_primary": false
+        }
+      ],
+      "top_scores": [
+        {
+          "score": "1-1",
+          "prob": 0.1208
+        },
+        {
+          "score": "1-2",
+          "prob": 0.0953
+        },
+        {
+          "score": "0-1",
+          "prob": 0.0944
+        },
+        {
+          "score": "2-1",
+          "prob": 0.0732
+        },
+        {
+          "score": "1-0",
+          "prob": 0.0724
+        }
+      ],
+      "data_quality": 1.0,
+      "model_disagreement": 0.0324,
+      "model_version": null,
+      "notes": []
+    },
+    {
+      "fixture_id": "Spain-LL2|2026-05-31|Almeria|Valladolid",
+      "league": "Spain-LL2",
+      "home_team": "Almeria",
+      "away_team": "Valladolid",
+      "kickoff": "2026-05-31",
+      "decision_time": "2026-07-11T19:47:19.724911+00:00",
+      "horizon": null,
+      "views": {
+        "pure": {
+          "H": 0.6129881876585519,
+          "D": 0.21222469677061337,
+          "A": 0.17478711557083473
+        },
+        "market": {
+          "H": 0.6842982018080164,
+          "D": 0.1659190268571829,
+          "A": 0.14978277133480067
+        },
+        "hybrid": {
+          "H": 0.6907407389172624,
+          "D": 0.18451669813234658,
+          "A": 0.1247425629503911
+        }
+      },
+      "selections": [
+        {
+          "selection": "H",
+          "market": "match_winner",
+          "side_or_line": "H",
+          "offered_odds": 1.39,
+          "model_probability": 0.6907,
+          "market_fair_probability": 0.6843,
+          "conservative_probability": 0.6448,
+          "probability_edge": 0.0064,
+          "raw_expected_value": -0.0399,
+          "conservative_expected_value": -0.1037,
+          "confidence_interval": [
+            0.6448,
+            0.7367
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "PRICE_BELOW_MINIMUM",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [
+            "model above market by +0.6 pts"
+          ],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Almeria|Valladolid::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "D",
+          "market": "match_winner",
+          "side_or_line": "D",
+          "offered_odds": 5.25,
+          "model_probability": 0.1845,
+          "market_fair_probability": 0.1659,
+          "conservative_probability": 0.1386,
+          "probability_edge": 0.0186,
+          "raw_expected_value": -0.0313,
+          "conservative_expected_value": -0.2724,
+          "confidence_interval": [
+            0.1386,
+            0.2304
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [
+            "model above market by +1.9 pts"
+          ],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Almeria|Valladolid::grp1",
+          "is_primary": false
+        },
+        {
+          "selection": "A",
+          "market": "match_winner",
+          "side_or_line": "A",
+          "offered_odds": 5.75,
+          "model_probability": 0.1247,
+          "market_fair_probability": 0.1498,
+          "conservative_probability": 0.0788,
+          "probability_edge": -0.025,
+          "raw_expected_value": -0.2827,
+          "conservative_expected_value": -0.5468,
+          "confidence_interval": [
+            0.0788,
+            0.1707
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Almeria|Valladolid::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "OVER_2.5",
+          "market": "over_under_2_5",
+          "side_or_line": "OVER_2.5",
+          "offered_odds": 1.53,
+          "model_probability": 0.6221,
+          "market_fair_probability": 0.6185,
+          "conservative_probability": 0.5761,
+          "probability_edge": 0.0036,
+          "raw_expected_value": -0.0483,
+          "conservative_expected_value": -0.1185,
+          "confidence_interval": [
+            0.5761,
+            0.668
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [
+            "model above market by +0.4 pts"
+          ],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Almeria|Valladolid::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "UNDER_2.5",
+          "market": "over_under_2_5",
+          "side_or_line": "UNDER_2.5",
+          "offered_odds": 2.4,
+          "model_probability": 0.3779,
+          "market_fair_probability": 0.3815,
+          "conservative_probability": 0.332,
+          "probability_edge": -0.0036,
+          "raw_expected_value": -0.0929,
+          "conservative_expected_value": -0.2031,
+          "confidence_interval": [
+            0.332,
+            0.4239
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Almeria|Valladolid::grp4",
+          "is_primary": false
+        }
+      ],
+      "top_scores": [
+        {
+          "score": "2-1",
+          "prob": 0.1118
+        },
+        {
+          "score": "2-0",
+          "prob": 0.1075
+        },
+        {
+          "score": "1-0",
+          "prob": 0.0976
+        },
+        {
+          "score": "1-1",
+          "prob": 0.0858
+        },
+        {
+          "score": "3-1",
+          "prob": 0.0783
+        }
+      ],
+      "data_quality": 1.0,
+      "model_disagreement": 0.0518,
+      "model_version": null,
+      "notes": []
+    },
+    {
+      "fixture_id": "Spain-LL2|2026-05-31|Burgos|Andorra",
+      "league": "Spain-LL2",
+      "home_team": "Burgos",
+      "away_team": "Andorra",
+      "kickoff": "2026-05-31",
+      "decision_time": "2026-07-11T19:47:19.724911+00:00",
+      "horizon": null,
+      "views": {
+        "pure": {
+          "H": 0.4325657943727713,
+          "D": 0.30622626939335257,
+          "A": 0.2612079362338761
+        },
+        "market": {
+          "H": 0.6372276260142183,
+          "D": 0.21270432248530338,
+          "A": 0.1500680515004783
+        },
+        "hybrid": {
+          "H": 0.6451339208007725,
+          "D": 0.21848427133903375,
+          "A": 0.13638180786019377
+        }
+      },
+      "selections": [
+        {
+          "selection": "H",
+          "market": "match_winner",
+          "side_or_line": "H",
+          "offered_odds": 1.49,
+          "model_probability": 0.6451,
+          "market_fair_probability": 0.6372,
+          "conservative_probability": 0.5543,
+          "probability_edge": 0.0079,
+          "raw_expected_value": -0.0388,
+          "conservative_expected_value": -0.1741,
+          "confidence_interval": [
+            0.5543,
+            0.736
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "MODEL_DISAGREEMENT_TOO_HIGH",
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "PRICE_BELOW_MINIMUM",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [
+            "model above market by +0.8 pts"
+          ],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Burgos|Andorra::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "D",
+          "market": "match_winner",
+          "side_or_line": "D",
+          "offered_odds": 4.2,
+          "model_probability": 0.2185,
+          "market_fair_probability": 0.2127,
+          "conservative_probability": 0.1276,
+          "probability_edge": 0.0058,
+          "raw_expected_value": -0.0824,
+          "conservative_expected_value": -0.464,
+          "confidence_interval": [
+            0.1276,
+            0.3093
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "MODEL_DISAGREEMENT_TOO_HIGH",
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [
+            "model above market by +0.6 pts"
+          ],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Burgos|Andorra::grp1",
+          "is_primary": false
+        },
+        {
+          "selection": "A",
+          "market": "match_winner",
+          "side_or_line": "A",
+          "offered_odds": 5.75,
+          "model_probability": 0.1364,
+          "market_fair_probability": 0.1501,
+          "conservative_probability": 0.0455,
+          "probability_edge": -0.0137,
+          "raw_expected_value": -0.2158,
+          "conservative_expected_value": -0.7382,
+          "confidence_interval": [
+            0.0455,
+            0.2272
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "MODEL_DISAGREEMENT_TOO_HIGH",
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Burgos|Andorra::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "OVER_2.5",
+          "market": "over_under_2_5",
+          "side_or_line": "OVER_2.5",
+          "offered_odds": 1.95,
+          "model_probability": 0.3815,
+          "market_fair_probability": 0.4861,
+          "conservative_probability": 0.2907,
+          "probability_edge": -0.1046,
+          "raw_expected_value": -0.256,
+          "conservative_expected_value": -0.4332,
+          "confidence_interval": [
+            0.2907,
+            0.4724
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "MODEL_DISAGREEMENT_TOO_HIGH",
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Burgos|Andorra::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "UNDER_2.5",
+          "market": "over_under_2_5",
+          "side_or_line": "UNDER_2.5",
+          "offered_odds": 1.85,
+          "model_probability": 0.6185,
+          "market_fair_probability": 0.5139,
+          "conservative_probability": 0.5276,
+          "probability_edge": 0.1046,
+          "raw_expected_value": 0.1441,
+          "conservative_expected_value": -0.0239,
+          "confidence_interval": [
+            0.5276,
+            0.7093
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "MODEL_DISAGREEMENT_TOO_HIGH",
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [
+            "model above market by +10.5 pts",
+            "raw EV +14.4%"
+          ],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Burgos|Andorra::grp4",
+          "is_primary": false
+        }
+      ],
+      "top_scores": [
+        {
+          "score": "1-0",
+          "prob": 0.2143
+        },
+        {
+          "score": "2-0",
+          "prob": 0.1355
+        },
+        {
+          "score": "2-1",
+          "prob": 0.1192
+        },
+        {
+          "score": "1-1",
+          "prob": 0.0981
+        },
+        {
+          "score": "0-0",
+          "prob": 0.0921
+        }
+      ],
+      "data_quality": 1.0,
+      "model_disagreement": 0.1417,
+      "model_version": null,
+      "notes": []
+    },
+    {
+      "fixture_id": "Spain-LL2|2026-05-31|Castellon|Eibar",
+      "league": "Spain-LL2",
+      "home_team": "Castellon",
+      "away_team": "Eibar",
+      "kickoff": "2026-05-31",
+      "decision_time": "2026-07-11T19:47:19.724911+00:00",
+      "horizon": null,
+      "views": {
+        "pure": {
+          "H": 0.423248791884246,
+          "D": 0.27858283850345317,
+          "A": 0.2981683696123008
+        },
+        "market": {
+          "H": 0.6283126548051888,
+          "D": 0.2055946593242839,
+          "A": 0.16609268587052722
+        },
+        "hybrid": {
+          "H": 0.641520306462086,
+          "D": 0.21746275849429353,
+          "A": 0.14101693504362042
+        }
+      },
+      "selections": [
+        {
+          "selection": "H",
+          "market": "match_winner",
+          "side_or_line": "H",
+          "offered_odds": 1.51,
+          "model_probability": 0.6415,
+          "market_fair_probability": 0.6283,
+          "conservative_probability": 0.5488,
+          "probability_edge": 0.0132,
+          "raw_expected_value": -0.0313,
+          "conservative_expected_value": -0.1714,
+          "confidence_interval": [
+            0.5488,
+            0.7343
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "MODEL_DISAGREEMENT_TOO_HIGH",
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [
+            "model above market by +1.3 pts"
+          ],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Castellon|Eibar::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "D",
+          "market": "match_winner",
+          "side_or_line": "D",
+          "offered_odds": 4.33,
+          "model_probability": 0.2175,
+          "market_fair_probability": 0.2056,
+          "conservative_probability": 0.1247,
+          "probability_edge": 0.0119,
+          "raw_expected_value": -0.0584,
+          "conservative_expected_value": -0.46,
+          "confidence_interval": [
+            0.1247,
+            0.3102
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "MODEL_DISAGREEMENT_TOO_HIGH",
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [
+            "model above market by +1.2 pts"
+          ],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Castellon|Eibar::grp1",
+          "is_primary": false
+        },
+        {
+          "selection": "A",
+          "market": "match_winner",
+          "side_or_line": "A",
+          "offered_odds": 5.25,
+          "model_probability": 0.141,
+          "market_fair_probability": 0.1661,
+          "conservative_probability": 0.0483,
+          "probability_edge": -0.0251,
+          "raw_expected_value": -0.2597,
+          "conservative_expected_value": -0.7466,
+          "confidence_interval": [
+            0.0483,
+            0.2338
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "MODEL_DISAGREEMENT_TOO_HIGH",
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Castellon|Eibar::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "OVER_2.5",
+          "market": "over_under_2_5",
+          "side_or_line": "OVER_2.5",
+          "offered_odds": 1.57,
+          "model_probability": 0.4811,
+          "market_fair_probability": 0.6057,
+          "conservative_probability": 0.3884,
+          "probability_edge": -0.1246,
+          "raw_expected_value": -0.2446,
+          "conservative_expected_value": -0.3903,
+          "confidence_interval": [
+            0.3884,
+            0.5739
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "MODEL_DISAGREEMENT_TOO_HIGH",
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Castellon|Eibar::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "UNDER_2.5",
+          "market": "over_under_2_5",
+          "side_or_line": "UNDER_2.5",
+          "offered_odds": 2.35,
+          "model_probability": 0.5189,
+          "market_fair_probability": 0.3943,
+          "conservative_probability": 0.4261,
+          "probability_edge": 0.1246,
+          "raw_expected_value": 0.2194,
+          "conservative_expected_value": 0.0014,
+          "confidence_interval": [
+            0.4261,
+            0.6116
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "MODEL_DISAGREEMENT_TOO_HIGH",
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD"
+          ],
+          "supporting_evidence": [
+            "model above market by +12.5 pts",
+            "raw EV +21.9%",
+            "conservative EV +0.1% (after 9.3pt buffer)"
+          ],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Castellon|Eibar::grp4",
+          "is_primary": false
+        }
+      ],
+      "top_scores": [
+        {
+          "score": "1-0",
+          "prob": 0.1632
+        },
+        {
+          "score": "2-1",
+          "prob": 0.1328
+        },
+        {
+          "score": "2-0",
+          "prob": 0.1187
+        },
+        {
+          "score": "1-1",
+          "prob": 0.1035
+        },
+        {
+          "score": "0-0",
+          "prob": 0.0685
+        }
+      ],
+      "data_quality": 1.0,
+      "model_disagreement": 0.1455,
+      "model_version": null,
+      "notes": []
+    },
+    {
+      "fixture_id": "Spain-LL2|2026-05-31|Cordoba|Huesca",
+      "league": "Spain-LL2",
+      "home_team": "Cordoba",
+      "away_team": "Huesca",
+      "kickoff": "2026-05-31",
+      "decision_time": "2026-07-11T19:47:19.724911+00:00",
+      "horizon": null,
+      "views": {
+        "pure": {
+          "H": 0.4925723114736497,
+          "D": 0.2544048209241911,
+          "A": 0.25302286760215914
+        },
+        "market": {
+          "H": 0.5540988860217723,
+          "D": 0.2868957855203198,
+          "A": 0.15900532845790782
+        },
+        "hybrid": {
+          "H": 0.5577908773681457,
+          "D": 0.2643314709526702,
+          "A": 0.17787765167918404
+        }
+      },
+      "selections": [
+        {
+          "selection": "H",
+          "market": "match_winner",
+          "side_or_line": "H",
+          "offered_odds": 1.71,
+          "model_probability": 0.5578,
+          "market_fair_probability": 0.5541,
+          "conservative_probability": 0.5127,
+          "probability_edge": 0.0037,
+          "raw_expected_value": -0.0462,
+          "conservative_expected_value": -0.1232,
+          "confidence_interval": [
+            0.5127,
+            0.6028
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [
+            "model above market by +0.4 pts"
+          ],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Cordoba|Huesca::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "D",
+          "market": "match_winner",
+          "side_or_line": "D",
+          "offered_odds": 3.2,
+          "model_probability": 0.2643,
+          "market_fair_probability": 0.2869,
+          "conservative_probability": 0.2193,
+          "probability_edge": -0.0226,
+          "raw_expected_value": -0.1541,
+          "conservative_expected_value": -0.2983,
+          "confidence_interval": [
+            0.2193,
+            0.3094
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Cordoba|Huesca::grp1",
+          "is_primary": false
+        },
+        {
+          "selection": "A",
+          "market": "match_winner",
+          "side_or_line": "A",
+          "offered_odds": 5.5,
+          "model_probability": 0.1779,
+          "market_fair_probability": 0.159,
+          "conservative_probability": 0.1328,
+          "probability_edge": 0.0189,
+          "raw_expected_value": -0.0217,
+          "conservative_expected_value": -0.2694,
+          "confidence_interval": [
+            0.1328,
+            0.2229
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [
+            "model above market by +1.9 pts"
+          ],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Cordoba|Huesca::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "OVER_2.5",
+          "market": "over_under_2_5",
+          "side_or_line": "OVER_2.5",
+          "offered_odds": 1.8,
+          "model_probability": 0.5238,
+          "market_fair_probability": 0.5278,
+          "conservative_probability": 0.4787,
+          "probability_edge": -0.004,
+          "raw_expected_value": -0.0572,
+          "conservative_expected_value": -0.1383,
+          "confidence_interval": [
+            0.4787,
+            0.5688
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Cordoba|Huesca::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "UNDER_2.5",
+          "market": "over_under_2_5",
+          "side_or_line": "UNDER_2.5",
+          "offered_odds": 2.0,
+          "model_probability": 0.4762,
+          "market_fair_probability": 0.4722,
+          "conservative_probability": 0.4312,
+          "probability_edge": 0.004,
+          "raw_expected_value": -0.0476,
+          "conservative_expected_value": -0.1377,
+          "confidence_interval": [
+            0.4312,
+            0.5213
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [
+            "model above market by +0.4 pts"
+          ],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Cordoba|Huesca::grp4",
+          "is_primary": false
+        }
+      ],
+      "top_scores": [
+        {
+          "score": "1-1",
+          "prob": 0.1255
+        },
+        {
+          "score": "1-0",
+          "prob": 0.1109
+        },
+        {
+          "score": "2-1",
+          "prob": 0.1082
+        },
+        {
+          "score": "2-0",
+          "prob": 0.0965
+        },
+        {
+          "score": "0-0",
+          "prob": 0.0702
+        }
+      ],
+      "data_quality": 1.0,
+      "model_disagreement": 0.0501,
+      "model_version": null,
+      "notes": []
+    },
+    {
+      "fixture_id": "Spain-LL2|2026-05-31|La Coruna|Las Palmas",
+      "league": "Spain-LL2",
+      "home_team": "La Coruna",
+      "away_team": "Las Palmas",
+      "kickoff": "2026-05-31",
+      "decision_time": "2026-07-11T19:47:19.724911+00:00",
+      "horizon": null,
+      "views": {
+        "pure": {
+          "H": 0.4033068867296415,
+          "D": 0.29273771834700524,
+          "A": 0.30395539492335333
+        },
+        "market": {
+          "H": 0.2826640644006422,
+          "D": 0.2693579403362579,
+          "A": 0.44797799526309995
+        },
+        "hybrid": {
+          "H": 0.26965764731821384,
+          "D": 0.2600519286415628,
+          "A": 0.4702904240402234
+        }
+      },
+      "selections": [
+        {
+          "selection": "H",
+          "market": "match_winner",
+          "side_or_line": "H",
+          "offered_odds": 3.25,
+          "model_probability": 0.2697,
+          "market_fair_probability": 0.2827,
+          "conservative_probability": 0.1942,
+          "probability_edge": -0.013,
+          "raw_expected_value": -0.1236,
+          "conservative_expected_value": -0.3688,
+          "confidence_interval": [
+            0.1942,
+            0.3451
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "MODEL_DISAGREEMENT_TOO_HIGH",
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|La Coruna|Las Palmas::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "D",
+          "market": "match_winner",
+          "side_or_line": "D",
+          "offered_odds": 3.4,
+          "model_probability": 0.2601,
+          "market_fair_probability": 0.2694,
+          "conservative_probability": 0.1846,
+          "probability_edge": -0.0093,
+          "raw_expected_value": -0.1158,
+          "conservative_expected_value": -0.3723,
+          "confidence_interval": [
+            0.1846,
+            0.3355
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "MODEL_DISAGREEMENT_TOO_HIGH",
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|La Coruna|Las Palmas::grp1",
+          "is_primary": false
+        },
+        {
+          "selection": "A",
+          "market": "match_winner",
+          "side_or_line": "A",
+          "offered_odds": 2.1,
+          "model_probability": 0.4703,
+          "market_fair_probability": 0.448,
+          "conservative_probability": 0.3948,
+          "probability_edge": 0.0223,
+          "raw_expected_value": -0.0124,
+          "conservative_expected_value": -0.1708,
+          "confidence_interval": [
+            0.3948,
+            0.5457
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "MODEL_DISAGREEMENT_TOO_HIGH",
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [
+            "model above market by +2.2 pts"
+          ],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|La Coruna|Las Palmas::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "OVER_2.5",
+          "market": "over_under_2_5",
+          "side_or_line": "OVER_2.5",
+          "offered_odds": 2.05,
+          "model_probability": 0.4155,
+          "market_fair_probability": 0.4582,
+          "conservative_probability": 0.34,
+          "probability_edge": -0.0427,
+          "raw_expected_value": -0.1483,
+          "conservative_expected_value": -0.3029,
+          "confidence_interval": [
+            0.34,
+            0.4909
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "MODEL_DISAGREEMENT_TOO_HIGH",
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|La Coruna|Las Palmas::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "UNDER_2.5",
+          "market": "over_under_2_5",
+          "side_or_line": "UNDER_2.5",
+          "offered_odds": 1.75,
+          "model_probability": 0.5845,
+          "market_fair_probability": 0.5418,
+          "conservative_probability": 0.5091,
+          "probability_edge": 0.0427,
+          "raw_expected_value": 0.0229,
+          "conservative_expected_value": -0.1091,
+          "confidence_interval": [
+            0.5091,
+            0.66
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "MODEL_DISAGREEMENT_TOO_HIGH",
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [
+            "model above market by +4.3 pts",
+            "raw EV +2.3%"
+          ],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|La Coruna|Las Palmas::grp4",
+          "is_primary": false
+        }
+      ],
+      "top_scores": [
+        {
+          "score": "0-1",
+          "prob": 0.1525
+        },
+        {
+          "score": "1-1",
+          "prob": 0.1219
+        },
+        {
+          "score": "1-2",
+          "prob": 0.1072
+        },
+        {
+          "score": "0-0",
+          "prob": 0.0932
+        },
+        {
+          "score": "0-2",
+          "prob": 0.0853
+        }
+      ],
+      "data_quality": 1.0,
+      "model_disagreement": 0.1109,
+      "model_version": null,
+      "notes": []
+    },
+    {
+      "fixture_id": "Spain-LL2|2026-05-31|Leganes|Mirandes",
+      "league": "Spain-LL2",
+      "home_team": "Leganes",
+      "away_team": "Mirandes",
+      "kickoff": "2026-05-31",
+      "decision_time": "2026-07-11T19:47:19.724911+00:00",
+      "horizon": null,
+      "views": {
+        "pure": {
+          "H": 0.42708287720962035,
+          "D": 0.2960649198379601,
+          "A": 0.2768522029524195
+        },
+        "market": {
+          "H": 0.45989289657648313,
+          "D": 0.2615643479804823,
+          "A": 0.2785427554430346
+        },
+        "hybrid": {
+          "H": 0.447277920907355,
+          "D": 0.27426664210476764,
+          "A": 0.2784554369878773
+        }
+      },
+      "selections": [
+        {
+          "selection": "H",
+          "market": "match_winner",
+          "side_or_line": "H",
+          "offered_odds": 2.05,
+          "model_probability": 0.4473,
+          "market_fair_probability": 0.4599,
+          "conservative_probability": 0.42,
+          "probability_edge": -0.0126,
+          "raw_expected_value": -0.0831,
+          "conservative_expected_value": -0.139,
+          "confidence_interval": [
+            0.42,
+            0.4745
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Leganes|Mirandes::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "D",
+          "market": "match_winner",
+          "side_or_line": "D",
+          "offered_odds": 3.5,
+          "model_probability": 0.2743,
+          "market_fair_probability": 0.2616,
+          "conservative_probability": 0.247,
+          "probability_edge": 0.0127,
+          "raw_expected_value": -0.0401,
+          "conservative_expected_value": -0.1355,
+          "confidence_interval": [
+            0.247,
+            0.3015
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [
+            "model above market by +1.3 pts"
+          ],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Leganes|Mirandes::grp1",
+          "is_primary": false
+        },
+        {
+          "selection": "A",
+          "market": "match_winner",
+          "side_or_line": "A",
+          "offered_odds": 3.3,
+          "model_probability": 0.2785,
+          "market_fair_probability": 0.2785,
+          "conservative_probability": 0.2512,
+          "probability_edge": -0.0001,
+          "raw_expected_value": -0.0811,
+          "conservative_expected_value": -0.1711,
+          "confidence_interval": [
+            0.2512,
+            0.3057
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Leganes|Mirandes::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "OVER_2.5",
+          "market": "over_under_2_5",
+          "side_or_line": "OVER_2.5",
+          "offered_odds": 1.83,
+          "model_probability": 0.3941,
+          "market_fair_probability": 0.5207,
+          "conservative_probability": 0.3669,
+          "probability_edge": -0.1266,
+          "raw_expected_value": -0.2788,
+          "conservative_expected_value": -0.3286,
+          "confidence_interval": [
+            0.3669,
+            0.4214
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Leganes|Mirandes::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "UNDER_2.5",
+          "market": "over_under_2_5",
+          "side_or_line": "UNDER_2.5",
+          "offered_odds": 1.98,
+          "model_probability": 0.6059,
+          "market_fair_probability": 0.4793,
+          "conservative_probability": 0.5786,
+          "probability_edge": 0.1266,
+          "raw_expected_value": 0.1996,
+          "conservative_expected_value": 0.1456,
+          "confidence_interval": [
+            0.5786,
+            0.6331
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE"
+          ],
+          "supporting_evidence": [
+            "model above market by +12.7 pts",
+            "raw EV +20.0%",
+            "conservative EV +14.6% (after 2.7pt buffer)"
+          ],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Leganes|Mirandes::grp4",
+          "is_primary": false
+        }
+      ],
+      "top_scores": [
+        {
+          "score": "1-0",
+          "prob": 0.1359
+        },
+        {
+          "score": "1-1",
+          "prob": 0.127
+        },
+        {
+          "score": "0-0",
+          "prob": 0.1045
+        },
+        {
+          "score": "0-1",
+          "prob": 0.0981
+        },
+        {
+          "score": "2-0",
+          "prob": 0.0901
+        }
+      ],
+      "data_quality": 1.0,
+      "model_disagreement": 0.0145,
+      "model_version": null,
+      "notes": []
+    },
+    {
+      "fixture_id": "Spain-LL2|2026-05-31|Santander|Cadiz",
+      "league": "Spain-LL2",
+      "home_team": "Santander",
+      "away_team": "Cadiz",
+      "kickoff": "2026-05-31",
+      "decision_time": "2026-07-11T19:47:19.724911+00:00",
+      "horizon": null,
+      "views": {
+        "pure": {
+          "H": 0.6575396776493752,
+          "D": 0.1913966767803111,
+          "A": 0.15106364557031374
+        },
+        "market": {
+          "H": 0.730099464613011,
+          "D": 0.18305664254925255,
+          "A": 0.08684389283773646
+        },
+        "hybrid": {
+          "H": 0.747985422486405,
+          "D": 0.1750786398407226,
+          "A": 0.07693593767287234
+        }
+      },
+      "selections": [
+        {
+          "selection": "H",
+          "market": "match_winner",
+          "side_or_line": "H",
+          "offered_odds": 1.3,
+          "model_probability": 0.748,
+          "market_fair_probability": 0.7301,
+          "conservative_probability": 0.6978,
+          "probability_edge": 0.0179,
+          "raw_expected_value": -0.0276,
+          "conservative_expected_value": -0.0928,
+          "confidence_interval": [
+            0.6978,
+            0.7981
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "PRICE_BELOW_MINIMUM",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [
+            "model above market by +1.8 pts"
+          ],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Santander|Cadiz::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "D",
+          "market": "match_winner",
+          "side_or_line": "D",
+          "offered_odds": 4.75,
+          "model_probability": 0.1751,
+          "market_fair_probability": 0.1831,
+          "conservative_probability": 0.1249,
+          "probability_edge": -0.008,
+          "raw_expected_value": -0.1684,
+          "conservative_expected_value": -0.4066,
+          "confidence_interval": [
+            0.1249,
+            0.2252
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Santander|Cadiz::grp1",
+          "is_primary": false
+        },
+        {
+          "selection": "A",
+          "market": "match_winner",
+          "side_or_line": "A",
+          "offered_odds": 9.0,
+          "model_probability": 0.0769,
+          "market_fair_probability": 0.0868,
+          "conservative_probability": 0.0268,
+          "probability_edge": -0.0099,
+          "raw_expected_value": -0.3076,
+          "conservative_expected_value": -0.7589,
+          "confidence_interval": [
+            0.0268,
+            0.1271
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "PRICE_ABOVE_VALIDATED_RANGE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Santander|Cadiz::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "OVER_2.5",
+          "market": "over_under_2_5",
+          "side_or_line": "OVER_2.5",
+          "offered_odds": 1.53,
+          "model_probability": 0.6685,
+          "market_fair_probability": 0.6185,
+          "conservative_probability": 0.6183,
+          "probability_edge": 0.05,
+          "raw_expected_value": 0.0228,
+          "conservative_expected_value": -0.054,
+          "confidence_interval": [
+            0.6183,
+            0.7186
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [
+            "model above market by +5.0 pts",
+            "raw EV +2.3%"
+          ],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Santander|Cadiz::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "UNDER_2.5",
+          "market": "over_under_2_5",
+          "side_or_line": "UNDER_2.5",
+          "offered_odds": 2.4,
+          "model_probability": 0.3315,
+          "market_fair_probability": 0.3815,
+          "conservative_probability": 0.2814,
+          "probability_edge": -0.05,
+          "raw_expected_value": -0.2043,
+          "conservative_expected_value": -0.3247,
+          "confidence_interval": [
+            0.2814,
+            0.3817
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Santander|Cadiz::grp4",
+          "is_primary": false
+        }
+      ],
+      "top_scores": [
+        {
+          "score": "2-1",
+          "prob": 0.1103
+        },
+        {
+          "score": "2-0",
+          "prob": 0.1056
+        },
+        {
+          "score": "1-0",
+          "prob": 0.0862
+        },
+        {
+          "score": "3-1",
+          "prob": 0.0859
+        },
+        {
+          "score": "3-0",
+          "prob": 0.0822
+        }
+      ],
+      "data_quality": 1.0,
+      "model_disagreement": 0.0603,
+      "model_version": null,
+      "notes": []
+    },
+    {
+      "fixture_id": "Spain-LL2|2026-05-31|Zaragoza|Malaga",
+      "league": "Spain-LL2",
+      "home_team": "Zaragoza",
+      "away_team": "Malaga",
+      "kickoff": "2026-05-31",
+      "decision_time": "2026-07-11T19:47:19.724911+00:00",
+      "horizon": null,
+      "views": {
+        "pure": {
+          "H": 0.2653791612033121,
+          "D": 0.2715519338726999,
+          "A": 0.46306890492398806
+        },
+        "market": {
+          "H": 0.18882657996298124,
+          "D": 0.2547648082646867,
+          "A": 0.5564086117723319
+        },
+        "hybrid": {
+          "H": 0.1798131264677189,
+          "D": 0.22314028771101707,
+          "A": 0.597046585821264
+        }
+      },
+      "selections": [
+        {
+          "selection": "H",
+          "market": "match_winner",
+          "side_or_line": "H",
+          "offered_odds": 4.75,
+          "model_probability": 0.1798,
+          "market_fair_probability": 0.1888,
+          "conservative_probability": 0.1152,
+          "probability_edge": -0.009,
+          "raw_expected_value": -0.1459,
+          "conservative_expected_value": -0.453,
+          "confidence_interval": [
+            0.1152,
+            0.2445
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Zaragoza|Malaga::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "D",
+          "market": "match_winner",
+          "side_or_line": "D",
+          "offered_odds": 3.6,
+          "model_probability": 0.2231,
+          "market_fair_probability": 0.2548,
+          "conservative_probability": 0.1585,
+          "probability_edge": -0.0316,
+          "raw_expected_value": -0.1967,
+          "conservative_expected_value": -0.4295,
+          "confidence_interval": [
+            0.1585,
+            0.2878
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Zaragoza|Malaga::grp1",
+          "is_primary": false
+        },
+        {
+          "selection": "A",
+          "market": "match_winner",
+          "side_or_line": "A",
+          "offered_odds": 1.71,
+          "model_probability": 0.597,
+          "market_fair_probability": 0.5564,
+          "conservative_probability": 0.5324,
+          "probability_edge": 0.0406,
+          "raw_expected_value": 0.0209,
+          "conservative_expected_value": -0.0896,
+          "confidence_interval": [
+            0.5324,
+            0.6617
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [
+            "model above market by +4.1 pts",
+            "raw EV +2.1%"
+          ],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Zaragoza|Malaga::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "OVER_2.5",
+          "market": "over_under_2_5",
+          "side_or_line": "OVER_2.5",
+          "offered_odds": 1.98,
+          "model_probability": 0.4868,
+          "market_fair_probability": 0.4793,
+          "conservative_probability": 0.4222,
+          "probability_edge": 0.0075,
+          "raw_expected_value": -0.0361,
+          "conservative_expected_value": -0.1641,
+          "confidence_interval": [
+            0.4222,
+            0.5515
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [
+            "model above market by +0.8 pts"
+          ],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Zaragoza|Malaga::grp3",
+          "is_primary": false
+        },
+        {
+          "selection": "UNDER_2.5",
+          "market": "over_under_2_5",
+          "side_or_line": "UNDER_2.5",
+          "offered_odds": 1.83,
+          "model_probability": 0.5132,
+          "market_fair_probability": 0.5207,
+          "conservative_probability": 0.4485,
+          "probability_edge": -0.0075,
+          "raw_expected_value": -0.0609,
+          "conservative_expected_value": -0.1792,
+          "confidence_interval": [
+            0.4485,
+            0.5778
+          ],
+          "grade": "Reject",
+          "decision_status": "NO BET",
+          "rejection_reasons": [
+            "INSUFFICIENT_HISTORICAL_SAMPLE",
+            "EDGE_BELOW_THRESHOLD",
+            "NO_POSITIVE_CONSERVATIVE_EV"
+          ],
+          "supporting_evidence": [],
+          "risk_warnings": [],
+          "model_version": null,
+          "odds_timestamp": "2026-07-11T19:44:27.208601713+00:00",
+          "hypothetical_kelly_fraction": null,
+          "correlation_group": "Spain-LL2|2026-05-31|Zaragoza|Malaga::grp4",
+          "is_primary": false
+        }
+      ],
+      "top_scores": [
+        {
+          "score": "0-1",
+          "prob": 0.1433
+        },
+        {
+          "score": "1-2",
+          "prob": 0.1181
+        },
+        {
+          "score": "0-2",
+          "prob": 0.1114
+        },
+        {
+          "score": "1-1",
+          "prob": 0.1062
+        },
+        {
+          "score": "0-0",
+          "prob": 0.0694
+        }
+      ],
+      "data_quality": 1.0,
+      "model_disagreement": 0.0893,
+      "model_version": null,
+      "notes": []
+    }
+  ]
+}

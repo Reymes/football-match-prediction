@@ -1,0 +1,1813 @@
+[
+  {
+    "league": "England-PL",
+    "date": "2025-08-15",
+    "home_team": "Liverpool",
+    "away_team": "Bournemouth",
+    "prob_home": 0.7551812338533135,
+    "prob_draw": 0.15059562160388726,
+    "prob_away": 0.09422314454279919,
+    "exp_goals_home": 2.767878471482671,
+    "exp_goals_away": 1.3065607372940122,
+    "top_scores": [
+      [
+        [
+          2,
+          1
+        ],
+        0.0949
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        0.0875
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        0.0726
+      ],
+      [
+        [
+          3,
+          0
+        ],
+        0.067
+      ],
+      [
+        [
+          4,
+          1
+        ],
+        0.0606
+      ]
+    ],
+    "btts": {
+      "yes": 0.6763,
+      "no": 0.3237
+    },
+    "over_under": {
+      "0.5": {
+        "over": 0.9823,
+        "under": 0.0177
+      },
+      "1.5": {
+        "over": 0.921,
+        "under": 0.079
+      },
+      "2.5": {
+        "over": 0.7819,
+        "under": 0.2181
+      },
+      "3.5": {
+        "over": 0.5918,
+        "under": 0.4082
+      },
+      "4.5": {
+        "over": 0.3961,
+        "under": 0.6039
+      }
+    },
+    "asian_handicap": {
+      "-1.5": {
+        "home": 0.533,
+        "push": 0.0,
+        "away": 0.467
+      },
+      "-1.0": {
+        "home": 0.533,
+        "push": 0.2222,
+        "away": 0.2448
+      },
+      "-0.75": {
+        "home": 0.6441,
+        "push": 0.1111,
+        "away": 0.2448
+      },
+      "-0.5": {
+        "home": 0.7552,
+        "push": 0.0,
+        "away": 0.2448
+      },
+      "-0.25": {
+        "home": 0.7552,
+        "push": 0.0753,
+        "away": 0.1695
+      },
+      "0.0": {
+        "home": 0.7552,
+        "push": 0.1506,
+        "away": 0.0942
+      },
+      "0.25": {
+        "home": 0.8305,
+        "push": 0.0753,
+        "away": 0.0942
+      },
+      "0.5": {
+        "home": 0.9058,
+        "push": 0.0,
+        "away": 0.0942
+      },
+      "0.75": {
+        "home": 0.9058,
+        "push": 0.0282,
+        "away": 0.066
+      },
+      "1.0": {
+        "home": 0.9058,
+        "push": 0.0564,
+        "away": 0.0378
+      },
+      "1.5": {
+        "home": 0.9622,
+        "push": 0.0,
+        "away": 0.0378
+      }
+    },
+    "team_totals": {
+      "home": {
+        "0.5": {
+          "over": 0.956,
+          "under": 0.044
+        },
+        "1.5": {
+          "over": 0.8092,
+          "under": 0.1908
+        },
+        "2.5": {
+          "over": 0.5707,
+          "under": 0.4293
+        }
+      },
+      "away": {
+        "0.5": {
+          "over": 0.7025,
+          "under": 0.2975
+        },
+        "1.5": {
+          "over": 0.332,
+          "under": 0.668
+        },
+        "2.5": {
+          "over": 0.1141,
+          "under": 0.8859
+        }
+      }
+    },
+    "confidence": 0.755,
+    "uncertainty": 0.655,
+    "reasons": [
+      "Model leans toward a home win (76%).",
+      "Liverpool is materially stronger on Elo (gap +194 incl. home advantage).",
+      "Market implies H/D/A 73%/16%/11%.",
+      "Top model drivers (SHAP, predicted class): mkt_prob_h (+0.34), mkt_prob_a (+0.12), elo_diff (+0.10), elo_exp_home (+0.09)."
+    ],
+    "feature_importance": {
+      "mkt_prob_h": 58717.8,
+      "mkt_prob_a": 37130.6,
+      "elo_diff": 33344.0,
+      "elo_exp_home": 20565.2,
+      "mkt_prob_d": 13014.9,
+      "season_progress": 7080.4,
+      "home_elo": 6924.8,
+      "away_elo": 5903.7
+    },
+    "actual": "H"
+  },
+  {
+    "league": "England-PL",
+    "date": "2025-08-16",
+    "home_team": "Aston Villa",
+    "away_team": "Newcastle",
+    "prob_home": 0.3722447991777152,
+    "prob_draw": 0.2932876343003423,
+    "prob_away": 0.3344675665219425,
+    "exp_goals_home": 2.025977015785885,
+    "exp_goals_away": 2.082189138941159,
+    "top_scores": [
+      [
+        [
+          2,
+          2
+        ],
+        0.102
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        0.1011
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        0.0681
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        0.0595
+      ],
+      [
+        [
+          3,
+          2
+        ],
+        0.0479
+      ]
+    ],
+    "btts": {
+      "yes": 0.7783,
+      "no": 0.2217
+    },
+    "over_under": {
+      "0.5": {
+        "over": 0.9727,
+        "under": 0.0273
+      },
+      "1.5": {
+        "over": 0.9178,
+        "under": 0.0822
+      },
+      "2.5": {
+        "over": 0.7546,
+        "under": 0.2454
+      },
+      "3.5": {
+        "over": 0.5846,
+        "under": 0.4154
+      },
+      "4.5": {
+        "over": 0.3735,
+        "under": 0.6265
+      }
+    },
+    "asian_handicap": {
+      "-1.5": {
+        "home": 0.2062,
+        "push": 0.0,
+        "away": 0.7938
+      },
+      "-1.0": {
+        "home": 0.2062,
+        "push": 0.1661,
+        "away": 0.6278
+      },
+      "-0.75": {
+        "home": 0.2892,
+        "push": 0.083,
+        "away": 0.6278
+      },
+      "-0.5": {
+        "home": 0.3722,
+        "push": 0.0,
+        "away": 0.6278
+      },
+      "-0.25": {
+        "home": 0.3722,
+        "push": 0.1466,
+        "away": 0.4811
+      },
+      "0.0": {
+        "home": 0.3722,
+        "push": 0.2933,
+        "away": 0.3345
+      },
+      "0.25": {
+        "home": 0.5189,
+        "push": 0.1466,
+        "away": 0.3345
+      },
+      "0.5": {
+        "home": 0.6655,
+        "push": 0.0,
+        "away": 0.3345
+      },
+      "0.75": {
+        "home": 0.6655,
+        "push": 0.0727,
+        "away": 0.2618
+      },
+      "1.0": {
+        "home": 0.6655,
+        "push": 0.1453,
+        "away": 0.1891
+      },
+      "1.5": {
+        "home": 0.8109,
+        "push": 0.0,
+        "away": 0.1891
+      }
+    },
+    "team_totals": {
+      "home": {
+        "0.5": {
+          "over": 0.8801,
+          "under": 0.1199
+        },
+        "1.5": {
+          "over": 0.6141,
+          "under": 0.3859
+        },
+        "2.5": {
+          "over": 0.3342,
+          "under": 0.6658
+        }
+      },
+      "away": {
+        "0.5": {
+          "over": 0.8709,
+          "under": 0.1291
+        },
+        "1.5": {
+          "over": 0.593,
+          "under": 0.407
+        },
+        "2.5": {
+          "over": 0.3155,
+          "under": 0.6845
+        }
+      }
+    },
+    "confidence": 0.372,
+    "uncertainty": 0.996,
+    "reasons": [
+      "Model leans toward a home win (37%).",
+      "Aston Villa is materially stronger on Elo (gap +63 incl. home advantage).",
+      "Aston Villa in better recent form (+0.83 pts/game over last matches).",
+      "Market implies H/D/A 41%/27%/32%.",
+      "Top model drivers (SHAP, predicted class): season_progress (-0.06), mkt_prob_a (-0.05), home_elo (+0.04), away_elo (+0.03)."
+    ],
+    "feature_importance": {
+      "mkt_prob_h": 58717.8,
+      "mkt_prob_a": 37130.6,
+      "elo_diff": 33344.0,
+      "elo_exp_home": 20565.2,
+      "mkt_prob_d": 13014.9,
+      "season_progress": 7080.4,
+      "home_elo": 6924.8,
+      "away_elo": 5903.7
+    },
+    "actual": "D"
+  },
+  {
+    "league": "England-PL",
+    "date": "2025-08-16",
+    "home_team": "Brighton",
+    "away_team": "Fulham",
+    "prob_home": 0.46880783613729066,
+    "prob_draw": 0.29324675627897645,
+    "prob_away": 0.2379454075837328,
+    "exp_goals_home": 2.196499834239957,
+    "exp_goals_away": 1.7706546682401478,
+    "top_scores": [
+      [
+        [
+          1,
+          1
+        ],
+        0.1072
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        0.0997
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        0.0795
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        0.0582
+      ],
+      [
+        [
+          3,
+          2
+        ],
+        0.0515
+      ]
+    ],
+    "btts": {
+      "yes": 0.7558,
+      "no": 0.2442
+    },
+    "over_under": {
+      "0.5": {
+        "over": 0.969,
+        "under": 0.031
+      },
+      "1.5": {
+        "over": 0.9084,
+        "under": 0.0916
+      },
+      "2.5": {
+        "over": 0.7338,
+        "under": 0.2662
+      },
+      "3.5": {
+        "over": 0.5585,
+        "under": 0.4415
+      },
+      "4.5": {
+        "over": 0.3474,
+        "under": 0.6526
+      }
+    },
+    "asian_handicap": {
+      "-1.5": {
+        "home": 0.2797,
+        "push": 0.0,
+        "away": 0.7203
+      },
+      "-1.0": {
+        "home": 0.2797,
+        "push": 0.1891,
+        "away": 0.5312
+      },
+      "-0.75": {
+        "home": 0.3743,
+        "push": 0.0945,
+        "away": 0.5312
+      },
+      "-0.5": {
+        "home": 0.4688,
+        "push": 0.0,
+        "away": 0.5312
+      },
+      "-0.25": {
+        "home": 0.4688,
+        "push": 0.1466,
+        "away": 0.3846
+      },
+      "0.0": {
+        "home": 0.4688,
+        "push": 0.2932,
+        "away": 0.2379
+      },
+      "0.25": {
+        "home": 0.6154,
+        "push": 0.1466,
+        "away": 0.2379
+      },
+      "0.5": {
+        "home": 0.7621,
+        "push": 0.0,
+        "away": 0.2379
+      },
+      "0.75": {
+        "home": 0.7621,
+        "push": 0.0587,
+        "away": 0.1792
+      },
+      "1.0": {
+        "home": 0.7621,
+        "push": 0.1174,
+        "away": 0.1205
+      },
+      "1.5": {
+        "home": 0.8795,
+        "push": 0.0,
+        "away": 0.1205
+      }
+    },
+    "team_totals": {
+      "home": {
+        "0.5": {
+          "over": 0.9013,
+          "under": 0.0987
+        },
+        "1.5": {
+          "over": 0.6584,
+          "under": 0.3416
+        },
+        "2.5": {
+          "over": 0.3809,
+          "under": 0.6191
+        }
+      },
+      "away": {
+        "0.5": {
+          "over": 0.8235,
+          "under": 0.1765
+        },
+        "1.5": {
+          "over": 0.5023,
+          "under": 0.4977
+        },
+        "2.5": {
+          "over": 0.2317,
+          "under": 0.7683
+        }
+      }
+    },
+    "confidence": 0.469,
+    "uncertainty": 0.962,
+    "reasons": [
+      "Model leans toward a home win (47%).",
+      "Brighton is materially stronger on Elo (gap +107 incl. home advantage).",
+      "Brighton in better recent form (+1.17 pts/game over last matches).",
+      "Market implies H/D/A 50%/26%/24%.",
+      "Top model drivers (SHAP, predicted class): mkt_prob_h (+0.05), home_elo (+0.04), elo_diff (+0.04), season_progress (-0.04)."
+    ],
+    "feature_importance": {
+      "mkt_prob_h": 58717.8,
+      "mkt_prob_a": 37130.6,
+      "elo_diff": 33344.0,
+      "elo_exp_home": 20565.2,
+      "mkt_prob_d": 13014.9,
+      "season_progress": 7080.4,
+      "home_elo": 6924.8,
+      "away_elo": 5903.7
+    },
+    "actual": "D"
+  },
+  {
+    "league": "England-PL",
+    "date": "2025-08-16",
+    "home_team": "Sunderland",
+    "away_team": "West Ham",
+    "prob_home": 0.20522327529975212,
+    "prob_draw": 0.2840912961696391,
+    "prob_away": 0.5106854285306088,
+    "exp_goals_home": 2.1503572388734025,
+    "exp_goals_away": 1.6659274747363149,
+    "top_scores": [
+      [
+        [
+          1,
+          2
+        ],
+        0.1124
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        0.1094
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        0.0938
+      ],
+      [
+        [
+          2,
+          3
+        ],
+        0.0671
+      ],
+      [
+        [
+          1,
+          3
+        ],
+        0.0624
+      ]
+    ],
+    "btts": {
+      "yes": 0.7417,
+      "no": 0.2583
+    },
+    "over_under": {
+      "0.5": {
+        "over": 0.9661,
+        "under": 0.0339
+      },
+      "1.5": {
+        "over": 0.8909,
+        "under": 0.1091
+      },
+      "2.5": {
+        "over": 0.7078,
+        "under": 0.2922
+      },
+      "3.5": {
+        "over": 0.5153,
+        "under": 0.4847
+      },
+      "4.5": {
+        "over": 0.3132,
+        "under": 0.6868
+      }
+    },
+    "asian_handicap": {
+      "-1.5": {
+        "home": 0.1222,
+        "push": 0.0,
+        "away": 0.8778
+      },
+      "-1.0": {
+        "home": 0.1222,
+        "push": 0.083,
+        "away": 0.7948
+      },
+      "-0.75": {
+        "home": 0.1637,
+        "push": 0.0415,
+        "away": 0.7948
+      },
+      "-0.5": {
+        "home": 0.2052,
+        "push": 0.0,
+        "away": 0.7948
+      },
+      "-0.25": {
+        "home": 0.2052,
+        "push": 0.142,
+        "away": 0.6527
+      },
+      "0.0": {
+        "home": 0.2052,
+        "push": 0.2841,
+        "away": 0.5107
+      },
+      "0.25": {
+        "home": 0.3473,
+        "push": 0.142,
+        "away": 0.5107
+      },
+      "0.5": {
+        "home": 0.4893,
+        "push": 0.0,
+        "away": 0.5107
+      },
+      "0.75": {
+        "home": 0.4893,
+        "push": 0.1302,
+        "away": 0.3805
+      },
+      "1.0": {
+        "home": 0.4893,
+        "push": 0.2604,
+        "away": 0.2503
+      },
+      "1.5": {
+        "home": 0.7497,
+        "push": 0.0,
+        "away": 0.2503
+      }
+    },
+    "team_totals": {
+      "home": {
+        "0.5": {
+          "over": 0.8105,
+          "under": 0.1895
+        },
+        "1.5": {
+          "over": 0.47,
+          "under": 0.53
+        },
+        "2.5": {
+          "over": 0.2113,
+          "under": 0.7887
+        }
+      },
+      "away": {
+        "0.5": {
+          "over": 0.8973,
+          "under": 0.1027
+        },
+        "1.5": {
+          "over": 0.6473,
+          "under": 0.3527
+        },
+        "2.5": {
+          "over": 0.3486,
+          "under": 0.6514
+        }
+      }
+    },
+    "confidence": 0.511,
+    "uncertainty": 0.934,
+    "reasons": [
+      "Model leans toward a away win (51%).",
+      "Sunderland is materially stronger on Elo (gap +75 incl. home advantage).",
+      "West Ham in better recent form (-0.83 pts/game over last matches).",
+      "Market implies H/D/A 29%/28%/42%.",
+      "Sunderland better rested (+30 days).",
+      "Top model drivers (SHAP, predicted class): mkt_prob_h (+0.28), mkt_prob_a (+0.21), home_elo (+0.05), away_matches_played (+0.05)."
+    ],
+    "feature_importance": {
+      "mkt_prob_h": 58717.8,
+      "mkt_prob_a": 37130.6,
+      "elo_diff": 33344.0,
+      "elo_exp_home": 20565.2,
+      "mkt_prob_d": 13014.9,
+      "season_progress": 7080.4,
+      "home_elo": 6924.8,
+      "away_elo": 5903.7
+    },
+    "actual": "H"
+  },
+  {
+    "league": "England-PL",
+    "date": "2025-08-16",
+    "home_team": "Tottenham",
+    "away_team": "Burnley",
+    "prob_home": 0.647527772900601,
+    "prob_draw": 0.24587988858049728,
+    "prob_away": 0.1065923385189017,
+    "exp_goals_home": 2.9979630093951175,
+    "exp_goals_away": 1.5192289987031247,
+    "top_scores": [
+      [
+        [
+          2,
+          2
+        ],
+        0.0869
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        0.0797
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        0.0718
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        0.0717
+      ],
+      [
+        [
+          3,
+          2
+        ],
+        0.0545
+      ]
+    ],
+    "btts": {
+      "yes": 0.7584,
+      "no": 0.2416
+    },
+    "over_under": {
+      "0.5": {
+        "over": 0.9798,
+        "under": 0.0202
+      },
+      "1.5": {
+        "over": 0.9413,
+        "under": 0.0587
+      },
+      "2.5": {
+        "over": 0.8063,
+        "under": 0.1937
+      },
+      "3.5": {
+        "over": 0.6591,
+        "under": 0.3409
+      },
+      "4.5": {
+        "over": 0.4513,
+        "under": 0.5487
+      }
+    },
+    "asian_handicap": {
+      "-1.5": {
+        "home": 0.4657,
+        "push": 0.0,
+        "away": 0.5343
+      },
+      "-1.0": {
+        "home": 0.4657,
+        "push": 0.1818,
+        "away": 0.3525
+      },
+      "-0.75": {
+        "home": 0.5566,
+        "push": 0.0909,
+        "away": 0.3525
+      },
+      "-0.5": {
+        "home": 0.6475,
+        "push": 0.0,
+        "away": 0.3525
+      },
+      "-0.25": {
+        "home": 0.6475,
+        "push": 0.1229,
+        "away": 0.2295
+      },
+      "0.0": {
+        "home": 0.6475,
+        "push": 0.2459,
+        "away": 0.1066
+      },
+      "0.25": {
+        "home": 0.7705,
+        "push": 0.1229,
+        "away": 0.1066
+      },
+      "0.5": {
+        "home": 0.8934,
+        "push": 0.0,
+        "away": 0.1066
+      },
+      "0.75": {
+        "home": 0.8934,
+        "push": 0.0302,
+        "away": 0.0764
+      },
+      "1.0": {
+        "home": 0.8934,
+        "push": 0.0604,
+        "away": 0.0462
+      },
+      "1.5": {
+        "home": 0.9538,
+        "push": 0.0,
+        "away": 0.0462
+      }
+    },
+    "team_totals": {
+      "home": {
+        "0.5": {
+          "over": 0.9563,
+          "under": 0.0437
+        },
+        "1.5": {
+          "over": 0.8044,
+          "under": 0.1956
+        },
+        "2.5": {
+          "over": 0.5704,
+          "under": 0.4296
+        }
+      },
+      "away": {
+        "0.5": {
+          "over": 0.7818,
+          "under": 0.2182
+        },
+        "1.5": {
+          "over": 0.4367,
+          "under": 0.5633
+        },
+        "2.5": {
+          "over": 0.1776,
+          "under": 0.8224
+        }
+      }
+    },
+    "confidence": 0.648,
+    "uncertainty": 0.787,
+    "reasons": [
+      "Model leans toward a home win (65%).",
+      "Tottenham is materially stronger on Elo (gap +108 incl. home advantage).",
+      "Burnley in better recent form (-0.67 pts/game over last matches).",
+      "Market implies H/D/A 69%/20%/11%.",
+      "Burnley better rested (-30 days).",
+      "Top model drivers (SHAP, predicted class): mkt_prob_h (+0.32), mkt_prob_a (+0.13), away_roll_sta (+0.10), elo_diff (+0.06)."
+    ],
+    "feature_importance": {
+      "mkt_prob_h": 58717.8,
+      "mkt_prob_a": 37130.6,
+      "elo_diff": 33344.0,
+      "elo_exp_home": 20565.2,
+      "mkt_prob_d": 13014.9,
+      "season_progress": 7080.4,
+      "home_elo": 6924.8,
+      "away_elo": 5903.7
+    },
+    "actual": "H"
+  },
+  {
+    "league": "England-PL",
+    "date": "2025-08-16",
+    "home_team": "Wolves",
+    "away_team": "Man City",
+    "prob_home": 0.12746692807910898,
+    "prob_draw": 0.1660092594559935,
+    "prob_away": 0.7065238124648975,
+    "exp_goals_home": 1.2184317573882824,
+    "exp_goals_away": 2.8156118288713547,
+    "top_scores": [
+      [
+        [
+          1,
+          2
+        ],
+        0.086
+      ],
+      [
+        [
+          1,
+          3
+        ],
+        0.0807
+      ],
+      [
+        [
+          0,
+          2
+        ],
+        0.0705
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        0.0662
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        0.0655
+      ]
+    ],
+    "btts": {
+      "yes": 0.6653,
+      "no": 0.3347
+    },
+    "over_under": {
+      "0.5": {
+        "over": 0.9789,
+        "under": 0.0211
+      },
+      "1.5": {
+        "over": 0.9139,
+        "under": 0.0861
+      },
+      "2.5": {
+        "over": 0.7655,
+        "under": 0.2345
+      },
+      "3.5": {
+        "over": 0.5738,
+        "under": 0.4262
+      },
+      "4.5": {
+        "over": 0.3772,
+        "under": 0.6228
+      }
+    },
+    "asian_handicap": {
+      "-1.5": {
+        "home": 0.0487,
+        "push": 0.0,
+        "away": 0.9513
+      },
+      "-1.0": {
+        "home": 0.0487,
+        "push": 0.0787,
+        "away": 0.8725
+      },
+      "-0.75": {
+        "home": 0.0881,
+        "push": 0.0394,
+        "away": 0.8725
+      },
+      "-0.5": {
+        "home": 0.1275,
+        "push": 0.0,
+        "away": 0.8725
+      },
+      "-0.25": {
+        "home": 0.1275,
+        "push": 0.083,
+        "away": 0.7895
+      },
+      "0.0": {
+        "home": 0.1275,
+        "push": 0.166,
+        "away": 0.7065
+      },
+      "0.25": {
+        "home": 0.2105,
+        "push": 0.083,
+        "away": 0.7065
+      },
+      "0.5": {
+        "home": 0.2935,
+        "push": 0.0,
+        "away": 0.7065
+      },
+      "0.75": {
+        "home": 0.2935,
+        "push": 0.0996,
+        "away": 0.6069
+      },
+      "1.0": {
+        "home": 0.2935,
+        "push": 0.1992,
+        "away": 0.5073
+      },
+      "1.5": {
+        "home": 0.4927,
+        "push": 0.0,
+        "away": 0.5073
+      }
+    },
+    "team_totals": {
+      "home": {
+        "0.5": {
+          "over": 0.7022,
+          "under": 0.2978
+        },
+        "1.5": {
+          "over": 0.3397,
+          "under": 0.6603
+        },
+        "2.5": {
+          "over": 0.1211,
+          "under": 0.8789
+        }
+      },
+      "away": {
+        "0.5": {
+          "over": 0.942,
+          "under": 0.058
+        },
+        "1.5": {
+          "over": 0.7749,
+          "under": 0.2251
+        },
+        "2.5": {
+          "over": 0.537,
+          "under": 0.463
+        }
+      }
+    },
+    "confidence": 0.707,
+    "uncertainty": 0.734,
+    "reasons": [
+      "Model leans toward a away win (71%).",
+      "Man City is materially stronger on Elo (gap -109 incl. home advantage).",
+      "Man City in better recent form (-1.50 pts/game over last matches).",
+      "Market implies H/D/A 15%/20%/65%.",
+      "Top model drivers (SHAP, predicted class): mkt_prob_h (+0.51), mkt_prob_a (+0.39), elo_diff (+0.18), elo_exp_home (+0.05)."
+    ],
+    "feature_importance": {
+      "mkt_prob_h": 58717.8,
+      "mkt_prob_a": 37130.6,
+      "elo_diff": 33344.0,
+      "elo_exp_home": 20565.2,
+      "mkt_prob_d": 13014.9,
+      "season_progress": 7080.4,
+      "home_elo": 6924.8,
+      "away_elo": 5903.7
+    },
+    "actual": "A"
+  },
+  {
+    "league": "England-PL",
+    "date": "2025-08-17",
+    "home_team": "Chelsea",
+    "away_team": "Crystal Palace",
+    "prob_home": 0.5782426548979804,
+    "prob_draw": 0.2203715435303137,
+    "prob_away": 0.20138580157170582,
+    "exp_goals_home": 2.1104791493024475,
+    "exp_goals_away": 1.4892853058490647,
+    "top_scores": [
+      [
+        [
+          2,
+          1
+        ],
+        0.1017
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        0.091
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        0.0715
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        0.0685
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        0.0683
+      ]
+    ],
+    "btts": {
+      "yes": 0.6825,
+      "no": 0.3175
+    },
+    "over_under": {
+      "0.5": {
+        "over": 0.9684,
+        "under": 0.0316
+      },
+      "1.5": {
+        "over": 0.8802,
+        "under": 0.1198
+      },
+      "2.5": {
+        "over": 0.6981,
+        "under": 0.3019
+      },
+      "3.5": {
+        "over": 0.4888,
+        "under": 0.5112
+      },
+      "4.5": {
+        "over": 0.2953,
+        "under": 0.7047
+      }
+    },
+    "asian_handicap": {
+      "-1.5": {
+        "home": 0.3465,
+        "push": 0.0,
+        "away": 0.6535
+      },
+      "-1.0": {
+        "home": 0.3465,
+        "push": 0.2317,
+        "away": 0.4218
+      },
+      "-0.75": {
+        "home": 0.4624,
+        "push": 0.1159,
+        "away": 0.4218
+      },
+      "-0.5": {
+        "home": 0.5782,
+        "push": 0.0,
+        "away": 0.4218
+      },
+      "-0.25": {
+        "home": 0.5782,
+        "push": 0.1102,
+        "away": 0.3116
+      },
+      "0.0": {
+        "home": 0.5782,
+        "push": 0.2204,
+        "away": 0.2014
+      },
+      "0.25": {
+        "home": 0.6884,
+        "push": 0.1102,
+        "away": 0.2014
+      },
+      "0.5": {
+        "home": 0.7986,
+        "push": 0.0,
+        "away": 0.2014
+      },
+      "0.75": {
+        "home": 0.7986,
+        "push": 0.0545,
+        "away": 0.1469
+      },
+      "1.0": {
+        "home": 0.7986,
+        "push": 0.109,
+        "away": 0.0924
+      },
+      "1.5": {
+        "home": 0.9076,
+        "push": 0.0,
+        "away": 0.0924
+      }
+    },
+    "team_totals": {
+      "home": {
+        "0.5": {
+          "over": 0.9006,
+          "under": 0.0994
+        },
+        "1.5": {
+          "over": 0.6646,
+          "under": 0.3354
+        },
+        "2.5": {
+          "over": 0.3879,
+          "under": 0.6121
+        }
+      },
+      "away": {
+        "0.5": {
+          "over": 0.7504,
+          "under": 0.2496
+        },
+        "1.5": {
+          "over": 0.3968,
+          "under": 0.6032
+        },
+        "2.5": {
+          "over": 0.1582,
+          "under": 0.8418
+        }
+      }
+    },
+    "confidence": 0.578,
+    "uncertainty": 0.885,
+    "reasons": [
+      "Model leans toward a home win (58%).",
+      "Chelsea is materially stronger on Elo (gap +96 incl. home advantage).",
+      "Chelsea in better recent form (+0.83 pts/game over last matches).",
+      "Market implies H/D/A 58%/22%/21%.",
+      "Top model drivers (SHAP, predicted class): mkt_prob_h (+0.17), elo_diff (+0.05), home_elo (+0.04), mkt_prob_a (+0.04)."
+    ],
+    "feature_importance": {
+      "mkt_prob_h": 58717.8,
+      "mkt_prob_a": 37130.6,
+      "elo_diff": 33344.0,
+      "elo_exp_home": 20565.2,
+      "mkt_prob_d": 13014.9,
+      "season_progress": 7080.4,
+      "home_elo": 6924.8,
+      "away_elo": 5903.7
+    },
+    "actual": "D"
+  },
+  {
+    "league": "England-PL",
+    "date": "2025-08-17",
+    "home_team": "Man United",
+    "away_team": "Arsenal",
+    "prob_home": 0.2421414035381528,
+    "prob_draw": 0.26859190440248365,
+    "prob_away": 0.4892666920593637,
+    "exp_goals_home": 1.0178411323665697,
+    "exp_goals_away": 2.2266166182694054,
+    "top_scores": [
+      [
+        [
+          1,
+          1
+        ],
+        0.124
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        0.0748
+      ],
+      [
+        [
+          0,
+          2
+        ],
+        0.0735
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        0.0694
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        0.0673
+      ]
+    ],
+    "btts": {
+      "yes": 0.5998,
+      "no": 0.4002
+    },
+    "over_under": {
+      "0.5": {
+        "over": 0.9423,
+        "under": 0.0577
+      },
+      "1.5": {
+        "over": 0.8241,
+        "under": 0.1759
+      },
+      "2.5": {
+        "over": 0.5954,
+        "under": 0.4046
+      },
+      "3.5": {
+        "over": 0.386,
+        "under": 0.614
+      },
+      "4.5": {
+        "over": 0.2065,
+        "under": 0.7935
+      }
+    },
+    "asian_handicap": {
+      "-1.5": {
+        "home": 0.0858,
+        "push": 0.0,
+        "away": 0.9142
+      },
+      "-1.0": {
+        "home": 0.0858,
+        "push": 0.1564,
+        "away": 0.7579
+      },
+      "-0.75": {
+        "home": 0.164,
+        "push": 0.0782,
+        "away": 0.7579
+      },
+      "-0.5": {
+        "home": 0.2421,
+        "push": 0.0,
+        "away": 0.7579
+      },
+      "-0.25": {
+        "home": 0.2421,
+        "push": 0.1343,
+        "away": 0.6236
+      },
+      "0.0": {
+        "home": 0.2421,
+        "push": 0.2686,
+        "away": 0.4893
+      },
+      "0.25": {
+        "home": 0.3764,
+        "push": 0.1343,
+        "away": 0.4893
+      },
+      "0.5": {
+        "home": 0.5107,
+        "push": 0.0,
+        "away": 0.4893
+      },
+      "0.75": {
+        "home": 0.5107,
+        "push": 0.086,
+        "away": 0.4032
+      },
+      "1.0": {
+        "home": 0.5107,
+        "push": 0.1721,
+        "away": 0.3172
+      },
+      "1.5": {
+        "home": 0.6828,
+        "push": 0.0,
+        "away": 0.3172
+      }
+    },
+    "team_totals": {
+      "home": {
+        "0.5": {
+          "over": 0.7001,
+          "under": 0.2999
+        },
+        "1.5": {
+          "over": 0.3385,
+          "under": 0.6615
+        },
+        "2.5": {
+          "over": 0.1159,
+          "under": 0.8841
+        }
+      },
+      "away": {
+        "0.5": {
+          "over": 0.842,
+          "under": 0.158
+        },
+        "1.5": {
+          "over": 0.5545,
+          "under": 0.4455
+        },
+        "2.5": {
+          "over": 0.3044,
+          "under": 0.6956
+        }
+      }
+    },
+    "confidence": 0.489,
+    "uncertainty": 0.952,
+    "reasons": [
+      "Model leans toward a away win (49%).",
+      "Arsenal is materially stronger on Elo (gap -110 incl. home advantage).",
+      "Arsenal in better recent form (-1.17 pts/game over last matches).",
+      "Market implies H/D/A 26%/26%/48%.",
+      "Top model drivers (SHAP, predicted class): mkt_prob_h (+0.28), mkt_prob_a (+0.21), elo_diff (+0.17), elo_exp_home (+0.05)."
+    ],
+    "feature_importance": {
+      "mkt_prob_h": 58717.8,
+      "mkt_prob_a": 37130.6,
+      "elo_diff": 33344.0,
+      "elo_exp_home": 20565.2,
+      "mkt_prob_d": 13014.9,
+      "season_progress": 7080.4,
+      "home_elo": 6924.8,
+      "away_elo": 5903.7
+    },
+    "actual": "A"
+  },
+  {
+    "league": "England-PL",
+    "date": "2025-08-17",
+    "home_team": "Nott'm Forest",
+    "away_team": "Brentford",
+    "prob_home": 0.4343884358764645,
+    "prob_draw": 0.3063229861352327,
+    "prob_away": 0.25928857798830285,
+    "exp_goals_home": 1.9301964676271954,
+    "exp_goals_away": 1.8218400135753883,
+    "top_scores": [
+      [
+        [
+          1,
+          1
+        ],
+        0.1193
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        0.1003
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        0.0842
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        0.0542
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        0.053
+      ]
+    ],
+    "btts": {
+      "yes": 0.737,
+      "no": 0.263
+    },
+    "over_under": {
+      "0.5": {
+        "over": 0.9624,
+        "under": 0.0376
+      },
+      "1.5": {
+        "over": 0.8909,
+        "under": 0.1091
+      },
+      "2.5": {
+        "over": 0.6979,
+        "under": 0.3021
+      },
+      "3.5": {
+        "over": 0.5143,
+        "under": 0.4857
+      },
+      "4.5": {
+        "over": 0.3056,
+        "under": 0.6944
+      }
+    },
+    "asian_handicap": {
+      "-1.5": {
+        "home": 0.2395,
+        "push": 0.0,
+        "away": 0.7605
+      },
+      "-1.0": {
+        "home": 0.2395,
+        "push": 0.1949,
+        "away": 0.5656
+      },
+      "-0.75": {
+        "home": 0.3369,
+        "push": 0.0975,
+        "away": 0.5656
+      },
+      "-0.5": {
+        "home": 0.4344,
+        "push": 0.0,
+        "away": 0.5656
+      },
+      "-0.25": {
+        "home": 0.4344,
+        "push": 0.1532,
+        "away": 0.4125
+      },
+      "0.0": {
+        "home": 0.4344,
+        "push": 0.3063,
+        "away": 0.2593
+      },
+      "0.25": {
+        "home": 0.5875,
+        "push": 0.1532,
+        "away": 0.2593
+      },
+      "0.5": {
+        "home": 0.7407,
+        "push": 0.0,
+        "away": 0.2593
+      },
+      "0.75": {
+        "home": 0.7407,
+        "push": 0.0613,
+        "away": 0.198
+      },
+      "1.0": {
+        "home": 0.7407,
+        "push": 0.1225,
+        "away": 0.1368
+      },
+      "1.5": {
+        "home": 0.8632,
+        "push": 0.0,
+        "away": 0.1368
+      }
+    },
+    "team_totals": {
+      "home": {
+        "0.5": {
+          "over": 0.8793,
+          "under": 0.1207
+        },
+        "1.5": {
+          "over": 0.6086,
+          "under": 0.3914
+        },
+        "2.5": {
+          "over": 0.3254,
+          "under": 0.6746
+        }
+      },
+      "away": {
+        "0.5": {
+          "over": 0.8201,
+          "under": 0.1799
+        },
+        "1.5": {
+          "over": 0.4942,
+          "under": 0.5058
+        },
+        "2.5": {
+          "over": 0.227,
+          "under": 0.773
+        }
+      }
+    },
+    "confidence": 0.434,
+    "uncertainty": 0.978,
+    "reasons": [
+      "Model leans toward a home win (43%).",
+      "Nott'm Forest is materially stronger on Elo (gap +70 incl. home advantage).",
+      "Brentford in better recent form (-0.83 pts/game over last matches).",
+      "Market implies H/D/A 44%/29%/27%.",
+      "Top model drivers (SHAP, predicted class): mkt_prob_a (-0.04), elo_diff (+0.04), away_elo (+0.03), away_ewma_gf (-0.03)."
+    ],
+    "feature_importance": {
+      "mkt_prob_h": 58717.8,
+      "mkt_prob_a": 37130.6,
+      "elo_diff": 33344.0,
+      "elo_exp_home": 20565.2,
+      "mkt_prob_d": 13014.9,
+      "season_progress": 7080.4,
+      "home_elo": 6924.8,
+      "away_elo": 5903.7
+    },
+    "actual": "H"
+  },
+  {
+    "league": "England-PL",
+    "date": "2025-08-18",
+    "home_team": "Leeds",
+    "away_team": "Everton",
+    "prob_home": 0.3946810669372582,
+    "prob_draw": 0.31036926113851043,
+    "prob_away": 0.2949496719242313,
+    "exp_goals_home": 1.4824847915627235,
+    "exp_goals_away": 2.2528969308719833,
+    "top_scores": [
+      [
+        [
+          1,
+          1
+        ],
+        0.1243
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        0.0994
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        0.0949
+      ],
+      [
+        [
+          3,
+          2
+        ],
+        0.0528
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        0.0511
+      ]
+    ],
+    "btts": {
+      "yes": 0.7265,
+      "no": 0.2735
+    },
+    "over_under": {
+      "0.5": {
+        "over": 0.959,
+        "under": 0.041
+      },
+      "1.5": {
+        "over": 0.8809,
+        "under": 0.1191
+      },
+      "2.5": {
+        "over": 0.6817,
+        "under": 0.3183
+      },
+      "3.5": {
+        "over": 0.493,
+        "under": 0.507
+      },
+      "4.5": {
+        "over": 0.2888,
+        "under": 0.7112
+      }
+    },
+    "asian_handicap": {
+      "-1.5": {
+        "home": 0.1784,
+        "push": 0.0,
+        "away": 0.8216
+      },
+      "-1.0": {
+        "home": 0.1784,
+        "push": 0.2163,
+        "away": 0.6053
+      },
+      "-0.75": {
+        "home": 0.2866,
+        "push": 0.1081,
+        "away": 0.6053
+      },
+      "-0.5": {
+        "home": 0.3947,
+        "push": 0.0,
+        "away": 0.6053
+      },
+      "-0.25": {
+        "home": 0.3947,
+        "push": 0.1552,
+        "away": 0.4501
+      },
+      "0.0": {
+        "home": 0.3947,
+        "push": 0.3104,
+        "away": 0.2949
+      },
+      "0.25": {
+        "home": 0.5499,
+        "push": 0.1552,
+        "away": 0.2949
+      },
+      "0.5": {
+        "home": 0.7051,
+        "push": 0.0,
+        "away": 0.2949
+      },
+      "0.75": {
+        "home": 0.7051,
+        "push": 0.0557,
+        "away": 0.2392
+      },
+      "1.0": {
+        "home": 0.7051,
+        "push": 0.1114,
+        "away": 0.1835
+      },
+      "1.5": {
+        "home": 0.8165,
+        "push": 0.0,
+        "away": 0.1835
+      }
+    },
+    "team_totals": {
+      "home": {
+        "0.5": {
+          "over": 0.8513,
+          "under": 0.1487
+        },
+        "1.5": {
+          "over": 0.5563,
+          "under": 0.4437
+        },
+        "2.5": {
+          "over": 0.2672,
+          "under": 0.7328
+        }
+      },
+      "away": {
+        "0.5": {
+          "over": 0.8343,
+          "under": 0.1657
+        },
+        "1.5": {
+          "over": 0.5169,
+          "under": 0.4831
+        },
+        "2.5": {
+          "over": 0.2564,
+          "under": 0.7436
+        }
+      }
+    },
+    "confidence": 0.395,
+    "uncertainty": 0.992,
+    "reasons": [
+      "Model leans toward a home win (39%).",
+      "Everton in better recent form (-1.33 pts/game over last matches).",
+      "Market implies H/D/A 40%/29%/32%.",
+      "Leeds better rested (+30 days).",
+      "Top model drivers (SHAP, predicted class): rest_diff (-0.07), season_progress (-0.06), elo_diff (-0.06), elo_exp_home (-0.04)."
+    ],
+    "feature_importance": {
+      "mkt_prob_h": 58717.8,
+      "mkt_prob_a": 37130.6,
+      "elo_diff": 33344.0,
+      "elo_exp_home": 20565.2,
+      "mkt_prob_d": 13014.9,
+      "season_progress": 7080.4,
+      "home_elo": 6924.8,
+      "away_elo": 5903.7
+    },
+    "actual": "H"
+  }
+]

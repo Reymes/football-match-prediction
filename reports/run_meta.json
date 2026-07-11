@@ -1,0 +1,10 @@
+{
+  "ensemble_weights": {
+    "market": 0.564,
+    "gbm": 0.306,
+    "dixon_coles": 0.131
+  },
+  "temperature": 0.9913702697471574,
+  "poisson_deviance_home": 1.1392,
+  "poisson_deviance_away": 1.1188
+}

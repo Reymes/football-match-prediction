@@ -1,0 +1,149 @@
+# --------------------------------------------------------------------------- #
+# Decision-engine configuration (bet.md §19).
+#
+# IMPORTANT: every numeric threshold below is an EXAMPLE / placeholder. They are
+# NOT claimed to be optimal or profitable. Final values must be selected on the
+# validation period (never the untouched test period) and documented — see
+# scripts/backtest_decisions.py and DECISIONS.md. Until a market demonstrates
+# adequate out-of-time probability quality AND positive out-of-time decision
+# performance, it should stay conservative or disabled.
+#
+# The engine is ADVISORY only. It never places bets. There is no martingale,
+# no loss-chasing, no automatic stake increase, and no "best bet of the day".
+# "No bet" is a normal, successful output.
+# --------------------------------------------------------------------------- #
+decision_engine:
+  require_fresh_fixtures: true          # reject if the fixture source is stale
+  require_timestamped_odds: true        # reject odds without a verifiable timestamp
+  allow_no_bet: true                    # "No bet" is always a valid output
+
+  # global gates ------------------------------------------------------------
+  minimum_data_quality: 0.90            # 0..1; below this -> DATA_QUALITY_TOO_LOW
+  maximum_model_disagreement: 0.10      # L1/2 gap between pure & hybrid HDA views
+  minimum_historical_samples: 300       # min validated samples in the market/band
+  max_fixture_staleness_hours: 72       # fixture row older than this -> stale
+  max_odds_staleness_hours: 24          # odds captured longer ago than this -> stale
+  probability_sum_tolerance: 0.02       # |sum(mutually-exclusive p) - 1| tolerance
+
+  # uncertainty buffer (bet.md §7) ------------------------------------------
+  # The buffer is NOT arbitrary: it is assembled from measured components.
+  # buffer = base_calibration_error
+  #        + disagreement_weight * model_disagreement
+  #        + data_quality_weight * (1 - data_quality)
+  #        + sample_weight        * shortfall_vs_min_samples
+  # then clamped to [0, max_uncertainty_buffer].
+  uncertainty:
+    base_calibration_error: 0.02        # default per-band calibration error (ECE-like)
+    disagreement_weight: 0.50
+    data_quality_weight: 0.10
+    sample_weight: 0.05
+    max_uncertainty_buffer: 0.15
+
+  # de-vig method used for the market fair probability -----------------------
+  devig_method: shin                    # normalized | power | shin
+
+  # per-market validation profiles (bet.md §10) -----------------------------
+  # Each market carries its OWN activation status, thresholds, odds range and
+  # sample requirement. Thresholds are examples pending validation.
+  markets:
+    match_winner:
+      enabled: true
+      minimum_probability_edge: 0.04
+      minimum_conservative_ev: 0.03
+      minimum_odds: 1.50
+      maximum_odds: 6.00
+      minimum_historical_samples: 300
+
+    over_under_2_5:
+      enabled: true
+      minimum_probability_edge: 0.035
+      minimum_conservative_ev: 0.025
+      minimum_odds: 1.50
+      maximum_odds: 3.50
+      minimum_historical_samples: 300
+
+    btts:
+      enabled: true
+      minimum_probability_edge: 0.035
+      minimum_conservative_ev: 0.025
+      minimum_odds: 1.50
+      maximum_odds: 3.50
+      minimum_historical_samples: 300
+
+    # Correct score is DISABLED by default (bet.md §10, §11, §19): individual
+    # score probabilities are small and bookmaker margins are large, so it needs
+    # far stricter calibration and a much larger validated sample before it may
+    # ever be enabled.
+    correct_score:
+      enabled: false
+      minimum_probability_edge: 0.025
+      minimum_conservative_ev: 0.08
+      minimum_model_probability: 0.07
+      minimum_odds: 4.00
+      maximum_odds: 41.00
+      minimum_historical_samples: 1000
+
+  # exposure controls (bet.md §14) ------------------------------------------
+  exposure:
+    maximum_qualified_selections_per_day: 3
+    maximum_primary_selections_per_match: 1
+    maximum_hypothetical_fraction_per_selection: 0.005   # 0.5% of bankroll
+    maximum_hypothetical_daily_fraction: 0.015           # 1.5% of bankroll
+    maximum_league_daily_fraction: 0.010                 # per-league cap
+    maximum_correlated_group_fraction: 0.005             # per correlated group
+
+  # optional fractional-Kelly research output (bet.md §15) -------------------
+  # OFF by default. Stakes are hypothetical research outputs only.
+  staking:
+    enabled: false
+    kelly_fraction: 0.25                 # quarter-Kelly after validation
+    hard_max_fraction: 0.005             # absolute cap per selection
+
+  # --------------------------------------------------------------------------- #
+  # Bet-mode decision profiles (bet-funcuanlty §4, §5).
+  #
+  # Two user-selectable modes re-threshold the SAME validated model outputs (they
+  # never build a new prediction model). Smart Bet favours probability quality
+  # over payout; High Return may take higher odds but demands stronger EV
+  # evidence and passes stress tests because variance is much higher.
+  #
+  # Every value is an EXAMPLE pending validation — NOT claimed optimal. Tune on
+  # the validation period only (never the untouched test set). See
+  # scripts/backtest_bet_modes.py. Correct score is only ever eligible inside
+  # High Return, and only when its market validation profile passes.
+  # --------------------------------------------------------------------------- #
+  bet_modes:
+    smart:
+      enabled: true
+      minimum_data_quality: 0.92
+      maximum_model_disagreement: 0.08
+      minimum_historical_samples: 400
+      minimum_probability_edge: 0.035
+      minimum_conservative_ev: 0.025
+      minimum_model_probability: 0.40
+      minimum_odds: 1.35
+      maximum_odds: 4.00
+      maximum_primary_selections_per_match: 1
+      maximum_qualified_selections_per_day: 3
+      require_positive_lower_confidence_bound: true
+      allowed_markets: [match_winner, over_under_2_5, btts]
+      strong_ev_multiple: 1.5
+
+    high_return:
+      enabled: true
+      minimum_data_quality: 0.88
+      maximum_model_disagreement: 0.14
+      minimum_historical_samples: 500
+      minimum_probability_edge: 0.05
+      minimum_conservative_ev: 0.08
+      minimum_model_probability: 0.08
+      minimum_odds: 3.00
+      maximum_odds: 20.00
+      maximum_primary_selections_per_match: 1
+      maximum_qualified_selections_per_day: 2
+      require_positive_lower_confidence_bound: true
+      require_model_support_count: 2      # need >=2 independent model supports
+      require_pure_model_support: true    # pure model must beat the market too
+      allowed_markets: [match_winner, over_under_2_5, btts, correct_score]
+      stress_reject_ev: -0.05             # EV floor under a modest prob cut
+      strong_ev_multiple: 1.5

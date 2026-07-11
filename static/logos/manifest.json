@@ -1,0 +1,180 @@
+{
+  "leagues": {
+    "items": [
+      {
+        "dest": "static/logos/league/england-pl.png",
+        "league": "England-PL",
+        "slug": "england-pl",
+        "source": "https://r2.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png",
+        "status": "ok"
+      },
+      {
+        "dest": "static/logos/league/england-champ.png",
+        "league": "England-Champ",
+        "slug": "england-champ",
+        "source": "https://r2.thesportsdb.com/images/media/league/badge/ty5a681688770169.png",
+        "status": "ok"
+      },
+      {
+        "dest": "static/logos/league/england-l1.png",
+        "league": "England-L1",
+        "slug": "england-l1",
+        "source": "https://r2.thesportsdb.com/images/media/league/badge/afedb31688770443.png",
+        "status": "ok"
+      },
+      {
+        "dest": "static/logos/league/england-l2.png",
+        "league": "England-L2",
+        "slug": "england-l2",
+        "source": "https://r2.thesportsdb.com/images/media/league/badge/jmb3ms1688770451.png",
+        "status": "ok"
+      },
+      {
+        "dest": "static/logos/league/england-nl.png",
+        "league": "England-NL",
+        "slug": "england-nl",
+        "source": "https://r2.thesportsdb.com/images/media/league/badge/5mq9v01752167973.png",
+        "status": "ok"
+      },
+      {
+        "dest": "static/logos/league/scotland-pr.png",
+        "league": "Scotland-PR",
+        "slug": "scotland-pr",
+        "source": "https://r2.thesportsdb.com/images/media/league/badge/72d3zc1688333496.png",
+        "status": "ok"
+      },
+      {
+        "dest": "static/logos/league/scotland-champ.png",
+        "league": "Scotland-Champ",
+        "slug": "scotland-champ",
+        "source": "https://r2.thesportsdb.com/images/media/league/badge/i57nok1721301867.png",
+        "status": "ok"
+      },
+      {
+        "dest": "static/logos/league/scotland-l1.png",
+        "league": "Scotland-L1",
+        "slug": "scotland-l1",
+        "source": "https://r2.thesportsdb.com/images/media/league/badge/gb4m951721302014.png",
+        "status": "ok"
+      },
+      {
+        "dest": "static/logos/league/scotland-l2.png",
+        "league": "Scotland-L2",
+        "slug": "scotland-l2",
+        "source": "https://r2.thesportsdb.com/images/media/league/badge/x52tu31721302085.png",
+        "status": "ok"
+      },
+      {
+        "dest": "static/logos/league/germany-bl.png",
+        "league": "Germany-BL",
+        "slug": "germany-bl",
+        "source": "https://r2.thesportsdb.com/images/media/league/badge/teqh1b1679952008.png",
+        "status": "ok"
+      },
+      {
+        "dest": "static/logos/league/germany-bl2.png",
+        "league": "Germany-BL2",
+        "slug": "germany-bl2",
+        "source": "https://r2.thesportsdb.com/images/media/league/badge/hl40981534764789.png",
+        "status": "ok"
+      },
+      {
+        "dest": "static/logos/league/italy-sa.png",
+        "league": "Italy-SA",
+        "slug": "italy-sa",
+        "source": "https://r2.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
+        "status": "ok"
+      },
+      {
+        "dest": "static/logos/league/italy-sb.png",
+        "league": "Italy-SB",
+        "slug": "italy-sb",
+        "source": "https://r2.thesportsdb.com/images/media/league/badge/uf5kph1598011132.png",
+        "status": "ok"
+      },
+      {
+        "dest": "static/logos/league/spain-ll.png",
+        "league": "Spain-LL",
+        "slug": "spain-ll",
+        "source": "https://r2.thesportsdb.com/images/media/league/badge/ja4it51687628717.png",
+        "status": "ok"
+      },
+      {
+        "dest": "static/logos/league/spain-ll2.png",
+        "league": "Spain-LL2",
+        "slug": "spain-ll2",
+        "source": "https://r2.thesportsdb.com/images/media/league/badge/r7u6821688425700.png",
+        "status": "ok"
+      },
+      {
+        "dest": "static/logos/league/france-l1.png",
+        "league": "France-L1",
+        "slug": "france-l1",
+        "source": "https://r2.thesportsdb.com/images/media/league/badge/9f7z9d1742983155.png",
+        "status": "ok"
+      },
+      {
+        "dest": "static/logos/league/france-l2.png",
+        "league": "France-L2",
+        "slug": "france-l2",
+        "source": "https://r2.thesportsdb.com/images/media/league/badge/aofb771742983333.png",
+        "status": "ok"
+      },
+      {
+        "dest": "static/logos/league/netherlands-ed.png",
+        "league": "Netherlands-ED",
+        "slug": "netherlands-ed",
+        "source": "https://r2.thesportsdb.com/images/media/league/badge/5cdsu21725984946.png",
+        "status": "ok"
+      },
+      {
+        "dest": "static/logos/league/belgium-pl.png",
+        "league": "Belgium-PL",
+        "slug": "belgium-pl",
+        "source": "https://r2.thesportsdb.com/images/media/league/badge/mjit7n1593634474.png",
+        "status": "ok"
+      },
+      {
+        "dest": "static/logos/league/portugal-pl.png",
+        "league": "Portugal-PL",
+        "slug": "portugal-pl",
+        "source": "https://www.thesportsdb.com/images/media/league/badge/3tgdke1782689102.png",
+        "status": "ok"
+      },
+      {
+        "dest": "static/logos/league/turkey-sl.png",
+        "league": "Turkey-SL",
+        "slug": "turkey-sl",
+        "source": "https://r2.thesportsdb.com/images/media/league/badge/ifm3zc1779990699.png",
+        "status": "ok"
+      },
+      {
+        "dest": "static/logos/league/greece-sl.png",
+        "league": "Greece-SL",
+        "slug": "greece-sl",
+        "source": "https://r2.thesportsdb.com/images/media/league/badge/sni7f51782459204.png",
+        "status": "ok"
+      }
+    ],
+    "summary": {
+      "by_status": {
+        "ok": 22
+      },
+      "kind": "leagues",
+      "total": 22
+    }
+  },
+  "misses": {
+    "leagues": [],
+    "teams": []
+  },
+  "note": "Real crests fetched from TheSportsDB (free tier). Missing entries fall back to generated SVG badges; nothing here is fabricated.",
+  "teams": {
+    "items": [],
+    "summary": {
+      "by_status": {},
+      "kind": "teams",
+      "total": 0
+    }
+  }
+}

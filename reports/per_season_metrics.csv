@@ -1,0 +1,2 @@
+season,n,small_sample,market_log_loss,dixon_coles_log_loss,gbm_log_loss,ensemble_log_loss,ensemble_cal_log_loss
+2025-2026,7626,False,1.0026,1.0539,1.0055,1.0025,1.0025
