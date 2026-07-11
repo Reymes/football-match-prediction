@@ -1,0 +1,5454 @@
+{
+  "smart": {
+    "summary": {
+      "selections_evaluated": 60,
+      "qualified": 0,
+      "watchlist": 0,
+      "no_bet": 60,
+      "no_bet_rate": 1.0,
+      "average_odds": null,
+      "average_model_probability": null,
+      "average_probability_edge": null,
+      "average_conservative_ev": null,
+      "rejection_reason_counts": {
+        "NO_POSITIVE_CONSERVATIVE_EV": 59,
+        "EDGE_BELOW_THRESHOLD": 59,
+        "MODEL_PROBABILITY_TOO_LOW": 28,
+        "MODEL_DISAGREEMENT_TOO_HIGH": 25,
+        "INSUFFICIENT_HISTORICAL_SAMPLE": 24,
+        "PRICE_ABOVE_VALIDATED_RANGE": 10,
+        "PRICE_BELOW_MINIMUM": 1
+      }
+    },
+    "selections": [
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Leganes|Mirandes",
+        "league": "Spain-LL2",
+        "home_team": "Leganes",
+        "away_team": "Mirandes",
+        "kickoff": "2026-05-31",
+        "selection": "UNDER_2.5",
+        "market": "over_under_2_5",
+        "line": "UNDER_2.5",
+        "offered_odds": 1.98,
+        "model_probability": 0.6,
+        "market_probability": 0.4793,
+        "hybrid_probability": 0.6,
+        "pure_probability": 0.6132,
+        "conservative_probability": 0.5607,
+        "break_even_probability": 0.5051,
+        "probability_edge": 0.1207,
+        "raw_expected_value": 0.188,
+        "conservative_expected_value": 0.1102,
+        "confidence_interval_lower": 0.5607,
+        "confidence_interval_upper": 0.6393,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "INSUFFICIENT_HISTORICAL_SAMPLE"
+        ],
+        "model_support_count": 2,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.59,
+            "expected_value": 0.1682
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.58,
+            "expected_value": 0.1484
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.02,
+            "stressed_probability": 0.58,
+            "expected_value": 0.1484
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.444,
+            "label": "Moderate"
+          },
+          "conservative_ev": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "calibration": {
+            "value": 0.8,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.519,
+            "label": "Moderate"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 0.0,
+            "label": "Weak"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0385,
+        "historical_sample_size": null,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "model above market by +12.1 pts",
+          "conservative EV +11.0%",
+          "2 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Castellon|Eibar",
+        "league": "Spain-LL2",
+        "home_team": "Castellon",
+        "away_team": "Eibar",
+        "kickoff": "2026-05-31",
+        "selection": "UNDER_2.5",
+        "market": "over_under_2_5",
+        "line": "UNDER_2.5",
+        "offered_odds": 2.35,
+        "model_probability": 0.5178,
+        "market_probability": 0.3943,
+        "hybrid_probability": 0.5178,
+        "pure_probability": 0.5437,
+        "conservative_probability": 0.418,
+        "break_even_probability": 0.4255,
+        "probability_edge": 0.1235,
+        "raw_expected_value": 0.2168,
+        "conservative_expected_value": -0.0178,
+        "confidence_interval_lower": 0.418,
+        "confidence_interval_upper": 0.6176,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_DISAGREEMENT_TOO_HIGH",
+          "INSUFFICIENT_HISTORICAL_SAMPLE",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 2,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.5078,
+            "expected_value": 0.1933
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.4978,
+            "expected_value": 0.1698
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.02,
+            "stressed_probability": 0.4978,
+            "expected_value": 0.1698
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.262,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.8,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 0.0,
+            "label": "Weak"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.1596,
+        "historical_sample_size": null,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "model above market by +12.3 pts",
+          "2 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Burgos|Andorra",
+        "league": "Spain-LL2",
+        "home_team": "Burgos",
+        "away_team": "Andorra",
+        "kickoff": "2026-05-31",
+        "selection": "UNDER_2.5",
+        "market": "over_under_2_5",
+        "line": "UNDER_2.5",
+        "offered_odds": 1.85,
+        "model_probability": 0.6158,
+        "market_probability": 0.5139,
+        "hybrid_probability": 0.6158,
+        "pure_probability": 0.6513,
+        "conservative_probability": 0.517,
+        "break_even_probability": 0.5405,
+        "probability_edge": 0.1019,
+        "raw_expected_value": 0.1392,
+        "conservative_expected_value": -0.0435,
+        "confidence_interval_lower": 0.517,
+        "confidence_interval_upper": 0.7146,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_DISAGREEMENT_TOO_HIGH",
+          "INSUFFICIENT_HISTORICAL_SAMPLE",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 2,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.6058,
+            "expected_value": 0.1207
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.5958,
+            "expected_value": 0.1022
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.02,
+            "stressed_probability": 0.5958,
+            "expected_value": 0.1022
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.48,
+            "label": "Moderate"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.8,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 0.0,
+            "label": "Weak"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.1576,
+        "historical_sample_size": null,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "model above market by +10.2 pts",
+          "2 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-30|Sociedad B|Cultural Leonesa",
+        "league": "Spain-LL2",
+        "home_team": "Sociedad B",
+        "away_team": "Cultural Leonesa",
+        "kickoff": "2026-05-30",
+        "selection": "UNDER_2.5",
+        "market": "over_under_2_5",
+        "line": "UNDER_2.5",
+        "offered_odds": 2.0,
+        "model_probability": 0.5418,
+        "market_probability": 0.4722,
+        "hybrid_probability": 0.5418,
+        "pure_probability": 0.5207,
+        "conservative_probability": 0.4725,
+        "break_even_probability": 0.5,
+        "probability_edge": 0.0696,
+        "raw_expected_value": 0.0836,
+        "conservative_expected_value": -0.0549,
+        "confidence_interval_lower": 0.4725,
+        "confidence_interval_upper": 0.611,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_DISAGREEMENT_TOO_HIGH",
+          "INSUFFICIENT_HISTORICAL_SAMPLE",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 2,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.5318,
+            "expected_value": 0.0636
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.5218,
+            "expected_value": 0.0436
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.02,
+            "stressed_probability": 0.5218,
+            "expected_value": 0.0436
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.315,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.8,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 0.0,
+            "label": "Weak"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0985,
+        "historical_sample_size": null,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "model above market by +7.0 pts",
+          "2 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Santander|Cadiz",
+        "league": "Spain-LL2",
+        "home_team": "Santander",
+        "away_team": "Cadiz",
+        "kickoff": "2026-05-31",
+        "selection": "H",
+        "market": "match_winner",
+        "line": "H",
+        "offered_odds": 1.3,
+        "model_probability": 0.7686,
+        "market_probability": 0.7301,
+        "hybrid_probability": 0.7686,
+        "pure_probability": 0.6575,
+        "conservative_probability": 0.725,
+        "break_even_probability": 0.7692,
+        "probability_edge": 0.0385,
+        "raw_expected_value": -0.0008,
+        "conservative_expected_value": -0.0575,
+        "confidence_interval_lower": 0.725,
+        "confidence_interval_upper": 0.8122,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "PRICE_BELOW_MINIMUM",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.7586,
+            "expected_value": -0.0138
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.7486,
+            "expected_value": -0.0268
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0066,
+            "stressed_probability": 0.762,
+            "expected_value": -0.0094
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.819,
+            "label": "Strong"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.934,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.075,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 0.584,
+            "label": "Acceptable"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.074,
+        "historical_sample_size": 467,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "model above market by +3.9 pts",
+          "1 independent model support(s)"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Santander|Cadiz",
+        "league": "Spain-LL2",
+        "home_team": "Santander",
+        "away_team": "Cadiz",
+        "kickoff": "2026-05-31",
+        "selection": "OVER_2.5",
+        "market": "over_under_2_5",
+        "line": "OVER_2.5",
+        "offered_odds": 1.53,
+        "model_probability": 0.6725,
+        "market_probability": 0.6185,
+        "hybrid_probability": 0.6725,
+        "pure_probability": 0.6563,
+        "conservative_probability": 0.6155,
+        "break_even_probability": 0.6536,
+        "probability_edge": 0.0541,
+        "raw_expected_value": 0.029,
+        "conservative_expected_value": -0.0583,
+        "confidence_interval_lower": 0.6155,
+        "confidence_interval_upper": 0.7295,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "INSUFFICIENT_HISTORICAL_SAMPLE",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 2,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.6625,
+            "expected_value": 0.0136
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.6525,
+            "expected_value": -0.0017
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.02,
+            "stressed_probability": 0.6525,
+            "expected_value": -0.0017
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.606,
+            "label": "Acceptable"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.8,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.075,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 0.0,
+            "label": "Weak"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.074,
+        "historical_sample_size": null,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "model above market by +5.4 pts",
+          "2 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Leganes|Mirandes",
+        "league": "Spain-LL2",
+        "home_team": "Leganes",
+        "away_team": "Mirandes",
+        "kickoff": "2026-05-31",
+        "selection": "H",
+        "market": "match_winner",
+        "line": "H",
+        "offered_odds": 2.05,
+        "model_probability": 0.4849,
+        "market_probability": 0.4599,
+        "hybrid_probability": 0.4849,
+        "pure_probability": 0.4271,
+        "conservative_probability": 0.4573,
+        "break_even_probability": 0.4878,
+        "probability_edge": 0.025,
+        "raw_expected_value": -0.006,
+        "conservative_expected_value": -0.0626,
+        "confidence_interval_lower": 0.4573,
+        "confidence_interval_upper": 0.5125,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.4749,
+            "expected_value": -0.0265
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.4649,
+            "expected_value": -0.047
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0084,
+            "stressed_probability": 0.4765,
+            "expected_value": -0.0231
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.189,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.916,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.519,
+            "label": "Moderate"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0385,
+        "historical_sample_size": 2819,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "model above market by +2.5 pts",
+          "1 independent model support(s)"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Almeria|Valladolid",
+        "league": "Spain-LL2",
+        "home_team": "Almeria",
+        "away_team": "Valladolid",
+        "kickoff": "2026-05-31",
+        "selection": "H",
+        "market": "match_winner",
+        "line": "H",
+        "offered_odds": 1.39,
+        "model_probability": 0.7126,
+        "market_probability": 0.6843,
+        "hybrid_probability": 0.7126,
+        "pure_probability": 0.613,
+        "conservative_probability": 0.6728,
+        "break_even_probability": 0.7194,
+        "probability_edge": 0.0283,
+        "raw_expected_value": -0.0095,
+        "conservative_expected_value": -0.0648,
+        "confidence_interval_lower": 0.6728,
+        "confidence_interval_upper": 0.7524,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.7026,
+            "expected_value": -0.0234
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.6926,
+            "expected_value": -0.0373
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0066,
+            "stressed_probability": 0.706,
+            "expected_value": -0.0186
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.695,
+            "label": "Acceptable"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.934,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.17,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 0.584,
+            "label": "Acceptable"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0664,
+        "historical_sample_size": 467,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "model above market by +2.8 pts",
+          "1 independent model support(s)"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Belgium-PL|2026-05-31|Gent|Genk",
+        "league": "Belgium-PL",
+        "home_team": "Gent",
+        "away_team": "Genk",
+        "kickoff": "2026-05-31",
+        "selection": "UNDER_2.5",
+        "market": "over_under_2_5",
+        "line": "UNDER_2.5",
+        "offered_odds": 2.1,
+        "model_probability": 0.478,
+        "market_probability": 0.444,
+        "hybrid_probability": 0.478,
+        "pure_probability": 0.4806,
+        "conservative_probability": 0.4439,
+        "break_even_probability": 0.4762,
+        "probability_edge": 0.0341,
+        "raw_expected_value": 0.0039,
+        "conservative_expected_value": -0.0678,
+        "confidence_interval_lower": 0.4439,
+        "confidence_interval_upper": 0.5122,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "INSUFFICIENT_HISTORICAL_SAMPLE",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 2,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.468,
+            "expected_value": -0.0172
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.458,
+            "expected_value": -0.0382
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.02,
+            "stressed_probability": 0.458,
+            "expected_value": -0.0382
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.173,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.8,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.646,
+            "label": "Acceptable"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 0.0,
+            "label": "Weak"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0283,
+        "historical_sample_size": null,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "model above market by +3.4 pts",
+          "2 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Cordoba|Huesca",
+        "league": "Spain-LL2",
+        "home_team": "Cordoba",
+        "away_team": "Huesca",
+        "kickoff": "2026-05-31",
+        "selection": "H",
+        "market": "match_winner",
+        "line": "H",
+        "offered_odds": 1.71,
+        "model_probability": 0.5823,
+        "market_probability": 0.5541,
+        "hybrid_probability": 0.5823,
+        "pure_probability": 0.4926,
+        "conservative_probability": 0.5381,
+        "break_even_probability": 0.5848,
+        "probability_edge": 0.0282,
+        "raw_expected_value": -0.0042,
+        "conservative_expected_value": -0.0799,
+        "confidence_interval_lower": 0.5381,
+        "confidence_interval_upper": 0.6266,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.5723,
+            "expected_value": -0.0214
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.5623,
+            "expected_value": -0.0385
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0143,
+            "stressed_probability": 0.568,
+            "expected_value": -0.0288
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.405,
+            "label": "Moderate"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.857,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.253,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0598,
+        "historical_sample_size": 1785,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "model above market by +2.8 pts",
+          "1 independent model support(s)"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Zaragoza|Malaga",
+        "league": "Spain-LL2",
+        "home_team": "Zaragoza",
+        "away_team": "Malaga",
+        "kickoff": "2026-05-31",
+        "selection": "A",
+        "market": "match_winner",
+        "line": "A",
+        "offered_odds": 1.71,
+        "model_probability": 0.597,
+        "market_probability": 0.5564,
+        "hybrid_probability": 0.597,
+        "pure_probability": 0.4631,
+        "conservative_probability": 0.538,
+        "break_even_probability": 0.5848,
+        "probability_edge": 0.0406,
+        "raw_expected_value": 0.0209,
+        "conservative_expected_value": -0.0799,
+        "confidence_interval_lower": 0.538,
+        "confidence_interval_upper": 0.656,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_DISAGREEMENT_TOO_HIGH",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.587,
+            "expected_value": 0.0038
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.577,
+            "expected_value": -0.0133
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0143,
+            "stressed_probability": 0.5827,
+            "expected_value": -0.0036
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.438,
+            "label": "Moderate"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.857,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0893,
+        "historical_sample_size": 1785,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "model above market by +4.1 pts",
+          "1 independent model support(s)"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Belgium-PL|2026-05-31|Gent|Genk",
+        "league": "Belgium-PL",
+        "home_team": "Gent",
+        "away_team": "Genk",
+        "kickoff": "2026-05-31",
+        "selection": "D",
+        "market": "match_winner",
+        "line": "D",
+        "offered_odds": 3.75,
+        "model_probability": 0.259,
+        "market_probability": 0.2461,
+        "hybrid_probability": 0.259,
+        "pure_probability": 0.2661,
+        "conservative_probability": 0.2444,
+        "break_even_probability": 0.2667,
+        "probability_edge": 0.0129,
+        "raw_expected_value": -0.0289,
+        "conservative_expected_value": -0.0833,
+        "confidence_interval_lower": 0.2444,
+        "confidence_interval_upper": 0.2735,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_PROBABILITY_TOO_LOW",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 2,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.249,
+            "expected_value": -0.0663
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.239,
+            "expected_value": -0.1037
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0004,
+            "stressed_probability": 0.2586,
+            "expected_value": -0.0302
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.996,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.646,
+            "label": "Acceptable"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0283,
+        "historical_sample_size": 9132,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "model above market by +1.3 pts",
+          "2 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-30|Granada|Sp Gijon",
+        "league": "Spain-LL2",
+        "home_team": "Granada",
+        "away_team": "Sp Gijon",
+        "kickoff": "2026-05-30",
+        "selection": "D",
+        "market": "match_winner",
+        "line": "D",
+        "offered_odds": 3.4,
+        "model_probability": 0.2781,
+        "market_probability": 0.266,
+        "hybrid_probability": 0.2781,
+        "pure_probability": 0.2645,
+        "conservative_probability": 0.2695,
+        "break_even_probability": 0.2941,
+        "probability_edge": 0.012,
+        "raw_expected_value": -0.0546,
+        "conservative_expected_value": -0.0837,
+        "confidence_interval_lower": 0.2695,
+        "confidence_interval_upper": 0.2866,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_PROBABILITY_TOO_LOW",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.2681,
+            "expected_value": -0.0885
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.2581,
+            "expected_value": -0.1225
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0004,
+            "stressed_probability": 0.2777,
+            "expected_value": -0.0557
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.996,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.795,
+            "label": "Strong"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0164,
+        "historical_sample_size": 9132,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "model above market by +1.2 pts",
+          "1 independent model support(s)"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-30|Ceuta|Albacete",
+        "league": "Spain-LL2",
+        "home_team": "Ceuta",
+        "away_team": "Albacete",
+        "kickoff": "2026-05-30",
+        "selection": "UNDER_2.5",
+        "market": "over_under_2_5",
+        "line": "UNDER_2.5",
+        "offered_odds": 2.0,
+        "model_probability": 0.4922,
+        "market_probability": 0.4722,
+        "hybrid_probability": 0.4922,
+        "pure_probability": 0.4827,
+        "conservative_probability": 0.4534,
+        "break_even_probability": 0.5,
+        "probability_edge": 0.02,
+        "raw_expected_value": -0.0155,
+        "conservative_expected_value": -0.0932,
+        "confidence_interval_lower": 0.4534,
+        "confidence_interval_upper": 0.5311,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "INSUFFICIENT_HISTORICAL_SAMPLE",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 2,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.4822,
+            "expected_value": -0.0356
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.4722,
+            "expected_value": -0.0556
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.02,
+            "stressed_probability": 0.4722,
+            "expected_value": -0.0556
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.205,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.8,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.529,
+            "label": "Moderate"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 0.0,
+            "label": "Weak"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0377,
+        "historical_sample_size": null,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "model above market by +2.0 pts",
+          "2 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-30|Granada|Sp Gijon",
+        "league": "Spain-LL2",
+        "home_team": "Granada",
+        "away_team": "Sp Gijon",
+        "kickoff": "2026-05-30",
+        "selection": "UNDER_2.5",
+        "market": "over_under_2_5",
+        "line": "UNDER_2.5",
+        "offered_odds": 1.95,
+        "model_probability": 0.4881,
+        "market_probability": 0.4861,
+        "hybrid_probability": 0.4881,
+        "pure_probability": 0.4831,
+        "conservative_probability": 0.4599,
+        "break_even_probability": 0.5128,
+        "probability_edge": 0.0019,
+        "raw_expected_value": -0.0482,
+        "conservative_expected_value": -0.1032,
+        "confidence_interval_lower": 0.4599,
+        "confidence_interval_upper": 0.5163,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "INSUFFICIENT_HISTORICAL_SAMPLE",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.4781,
+            "expected_value": -0.0677
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.4681,
+            "expected_value": -0.0872
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.02,
+            "stressed_probability": 0.4681,
+            "expected_value": -0.0872
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.196,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.8,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.795,
+            "label": "Strong"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 0.0,
+            "label": "Weak"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0164,
+        "historical_sample_size": null,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "model above market by +0.2 pts",
+          "1 independent model support(s)"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|La Coruna|Las Palmas",
+        "league": "Spain-LL2",
+        "home_team": "La Coruna",
+        "away_team": "Las Palmas",
+        "kickoff": "2026-05-31",
+        "selection": "UNDER_2.5",
+        "market": "over_under_2_5",
+        "line": "UNDER_2.5",
+        "offered_odds": 1.75,
+        "model_probability": 0.583,
+        "market_probability": 0.5418,
+        "hybrid_probability": 0.583,
+        "pure_probability": 0.5927,
+        "conservative_probability": 0.5115,
+        "break_even_probability": 0.5714,
+        "probability_edge": 0.0411,
+        "raw_expected_value": 0.0202,
+        "conservative_expected_value": -0.1049,
+        "confidence_interval_lower": 0.5115,
+        "confidence_interval_upper": 0.6544,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_DISAGREEMENT_TOO_HIGH",
+          "INSUFFICIENT_HISTORICAL_SAMPLE",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 2,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.573,
+            "expected_value": 0.0027
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.563,
+            "expected_value": -0.0148
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.02,
+            "stressed_probability": 0.563,
+            "expected_value": -0.0148
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.407,
+            "label": "Moderate"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.8,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 0.0,
+            "label": "Weak"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.103,
+        "historical_sample_size": null,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "model above market by +4.1 pts",
+          "2 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-30|Granada|Sp Gijon",
+        "league": "Spain-LL2",
+        "home_team": "Granada",
+        "away_team": "Sp Gijon",
+        "kickoff": "2026-05-30",
+        "selection": "OVER_2.5",
+        "market": "over_under_2_5",
+        "line": "OVER_2.5",
+        "offered_odds": 1.85,
+        "model_probability": 0.5119,
+        "market_probability": 0.5139,
+        "hybrid_probability": 0.5119,
+        "pure_probability": 0.5169,
+        "conservative_probability": 0.4837,
+        "break_even_probability": 0.5405,
+        "probability_edge": -0.0019,
+        "raw_expected_value": -0.053,
+        "conservative_expected_value": -0.1051,
+        "confidence_interval_lower": 0.4837,
+        "confidence_interval_upper": 0.5401,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "INSUFFICIENT_HISTORICAL_SAMPLE",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.5019,
+            "expected_value": -0.0715
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.4919,
+            "expected_value": -0.09
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.02,
+            "stressed_probability": 0.4919,
+            "expected_value": -0.09
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.249,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.8,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.795,
+            "label": "Strong"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 0.0,
+            "label": "Weak"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0164,
+        "historical_sample_size": null,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "1 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-30|Granada|Sp Gijon",
+        "league": "Spain-LL2",
+        "home_team": "Granada",
+        "away_team": "Sp Gijon",
+        "kickoff": "2026-05-30",
+        "selection": "H",
+        "market": "match_winner",
+        "line": "H",
+        "offered_odds": 2.32,
+        "model_probability": 0.398,
+        "market_probability": 0.4,
+        "hybrid_probability": 0.398,
+        "pure_probability": 0.4226,
+        "conservative_probability": 0.3856,
+        "break_even_probability": 0.431,
+        "probability_edge": -0.0019,
+        "raw_expected_value": -0.0766,
+        "conservative_expected_value": -0.1055,
+        "confidence_interval_lower": 0.3856,
+        "confidence_interval_upper": 0.4105,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_PROBABILITY_TOO_LOW",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.388,
+            "expected_value": -0.0998
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.378,
+            "expected_value": -0.123
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0043,
+            "stressed_probability": 0.3937,
+            "expected_value": -0.0865
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.957,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.795,
+            "label": "Strong"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0164,
+        "historical_sample_size": 4338,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "1 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-30|Ceuta|Albacete",
+        "league": "Spain-LL2",
+        "home_team": "Ceuta",
+        "away_team": "Albacete",
+        "kickoff": "2026-05-30",
+        "selection": "D",
+        "market": "match_winner",
+        "line": "D",
+        "offered_odds": 3.2,
+        "model_probability": 0.2946,
+        "market_probability": 0.29,
+        "hybrid_probability": 0.2946,
+        "pure_probability": 0.2665,
+        "conservative_probability": 0.2754,
+        "break_even_probability": 0.3125,
+        "probability_edge": 0.0047,
+        "raw_expected_value": -0.0572,
+        "conservative_expected_value": -0.1187,
+        "confidence_interval_lower": 0.2754,
+        "confidence_interval_upper": 0.3139,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_PROBABILITY_TOO_LOW",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.2846,
+            "expected_value": -0.0893
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.2746,
+            "expected_value": -0.1213
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0004,
+            "stressed_probability": 0.2942,
+            "expected_value": -0.0585
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.996,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.529,
+            "label": "Moderate"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0377,
+        "historical_sample_size": 9132,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "model above market by +0.5 pts",
+          "1 independent model support(s)"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Belgium-PL|2026-05-31|Gent|Genk",
+        "league": "Belgium-PL",
+        "home_team": "Gent",
+        "away_team": "Genk",
+        "kickoff": "2026-05-31",
+        "selection": "H",
+        "market": "match_winner",
+        "line": "H",
+        "offered_odds": 2.9,
+        "model_probability": 0.3216,
+        "market_probability": 0.323,
+        "hybrid_probability": 0.3216,
+        "pure_probability": 0.3569,
+        "conservative_probability": 0.3032,
+        "break_even_probability": 0.3448,
+        "probability_edge": -0.0014,
+        "raw_expected_value": -0.0673,
+        "conservative_expected_value": -0.1207,
+        "confidence_interval_lower": 0.3032,
+        "confidence_interval_upper": 0.34,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_PROBABILITY_TOO_LOW",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.3116,
+            "expected_value": -0.0964
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.3016,
+            "expected_value": -0.1254
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0043,
+            "stressed_probability": 0.3173,
+            "expected_value": -0.0797
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.957,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.646,
+            "label": "Acceptable"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0283,
+        "historical_sample_size": 4338,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "1 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-30|Ceuta|Albacete",
+        "league": "Spain-LL2",
+        "home_team": "Ceuta",
+        "away_team": "Albacete",
+        "kickoff": "2026-05-30",
+        "selection": "H",
+        "market": "match_winner",
+        "line": "H",
+        "offered_odds": 2.3,
+        "model_probability": 0.4078,
+        "market_probability": 0.4102,
+        "hybrid_probability": 0.4078,
+        "pure_probability": 0.3794,
+        "conservative_probability": 0.3806,
+        "break_even_probability": 0.4348,
+        "probability_edge": -0.0024,
+        "raw_expected_value": -0.0621,
+        "conservative_expected_value": -0.1247,
+        "confidence_interval_lower": 0.3806,
+        "confidence_interval_upper": 0.435,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 0,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.3978,
+            "expected_value": -0.0851
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.3878,
+            "expected_value": -0.1081
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0084,
+            "stressed_probability": 0.3994,
+            "expected_value": -0.0813
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.017,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.916,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.529,
+            "label": "Moderate"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0377,
+        "historical_sample_size": 2819,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "0 independent model support(s)"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Belgium-PL|2026-05-31|Gent|Genk",
+        "league": "Belgium-PL",
+        "home_team": "Gent",
+        "away_team": "Genk",
+        "kickoff": "2026-05-31",
+        "selection": "A",
+        "market": "match_winner",
+        "line": "A",
+        "offered_odds": 2.2,
+        "model_probability": 0.4194,
+        "market_probability": 0.4309,
+        "hybrid_probability": 0.4194,
+        "pure_probability": 0.377,
+        "conservative_probability": 0.3969,
+        "break_even_probability": 0.4545,
+        "probability_edge": -0.0115,
+        "raw_expected_value": -0.0773,
+        "conservative_expected_value": -0.1268,
+        "confidence_interval_lower": 0.3969,
+        "confidence_interval_upper": 0.4419,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 0,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.4094,
+            "expected_value": -0.0993
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.3994,
+            "expected_value": -0.1213
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0084,
+            "stressed_probability": 0.411,
+            "expected_value": -0.0957
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.043,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.916,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.646,
+            "label": "Acceptable"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0283,
+        "historical_sample_size": 2819,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "0 independent model support(s)"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Almeria|Valladolid",
+        "league": "Spain-LL2",
+        "home_team": "Almeria",
+        "away_team": "Valladolid",
+        "kickoff": "2026-05-31",
+        "selection": "OVER_2.5",
+        "market": "over_under_2_5",
+        "line": "OVER_2.5",
+        "offered_odds": 1.53,
+        "model_probability": 0.623,
+        "market_probability": 0.6185,
+        "hybrid_probability": 0.623,
+        "pure_probability": 0.6077,
+        "conservative_probability": 0.5698,
+        "break_even_probability": 0.6536,
+        "probability_edge": 0.0045,
+        "raw_expected_value": -0.0468,
+        "conservative_expected_value": -0.1282,
+        "confidence_interval_lower": 0.5698,
+        "confidence_interval_upper": 0.6762,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "INSUFFICIENT_HISTORICAL_SAMPLE",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.613,
+            "expected_value": -0.0621
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.603,
+            "expected_value": -0.0774
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.02,
+            "stressed_probability": 0.603,
+            "expected_value": -0.0774
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.496,
+            "label": "Moderate"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.8,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.17,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 0.0,
+            "label": "Weak"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0664,
+        "historical_sample_size": null,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "model above market by +0.4 pts",
+          "1 independent model support(s)"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Cordoba|Huesca",
+        "league": "Spain-LL2",
+        "home_team": "Cordoba",
+        "away_team": "Huesca",
+        "kickoff": "2026-05-31",
+        "selection": "OVER_2.5",
+        "market": "over_under_2_5",
+        "line": "OVER_2.5",
+        "offered_odds": 1.8,
+        "model_probability": 0.5293,
+        "market_probability": 0.5278,
+        "hybrid_probability": 0.5293,
+        "pure_probability": 0.5245,
+        "conservative_probability": 0.4794,
+        "break_even_probability": 0.5556,
+        "probability_edge": 0.0016,
+        "raw_expected_value": -0.0472,
+        "conservative_expected_value": -0.137,
+        "confidence_interval_lower": 0.4794,
+        "confidence_interval_upper": 0.5793,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "INSUFFICIENT_HISTORICAL_SAMPLE",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.5193,
+            "expected_value": -0.0653
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.5093,
+            "expected_value": -0.0833
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.02,
+            "stressed_probability": 0.5093,
+            "expected_value": -0.0833
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.287,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.8,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.253,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 0.0,
+            "label": "Weak"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0598,
+        "historical_sample_size": null,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "model above market by +0.2 pts",
+          "1 independent model support(s)"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-30|Ceuta|Albacete",
+        "league": "Spain-LL2",
+        "home_team": "Ceuta",
+        "away_team": "Albacete",
+        "kickoff": "2026-05-30",
+        "selection": "A",
+        "market": "match_winner",
+        "line": "A",
+        "offered_odds": 3.1,
+        "model_probability": 0.2976,
+        "market_probability": 0.2999,
+        "hybrid_probability": 0.2976,
+        "pure_probability": 0.3541,
+        "conservative_probability": 0.2784,
+        "break_even_probability": 0.3226,
+        "probability_edge": -0.0023,
+        "raw_expected_value": -0.0775,
+        "conservative_expected_value": -0.1371,
+        "confidence_interval_lower": 0.2784,
+        "confidence_interval_upper": 0.3168,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_PROBABILITY_TOO_LOW",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.2876,
+            "expected_value": -0.1084
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.2776,
+            "expected_value": -0.1394
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0004,
+            "stressed_probability": 0.2972,
+            "expected_value": -0.0786
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.996,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.529,
+            "label": "Moderate"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0377,
+        "historical_sample_size": 9132,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "1 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-30|Granada|Sp Gijon",
+        "league": "Spain-LL2",
+        "home_team": "Granada",
+        "away_team": "Sp Gijon",
+        "kickoff": "2026-05-30",
+        "selection": "A",
+        "market": "match_winner",
+        "line": "A",
+        "offered_odds": 2.75,
+        "model_probability": 0.3239,
+        "market_probability": 0.334,
+        "hybrid_probability": 0.3239,
+        "pure_probability": 0.3129,
+        "conservative_probability": 0.3115,
+        "break_even_probability": 0.3636,
+        "probability_edge": -0.0101,
+        "raw_expected_value": -0.1092,
+        "conservative_expected_value": -0.1435,
+        "confidence_interval_lower": 0.3115,
+        "confidence_interval_upper": 0.3364,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_PROBABILITY_TOO_LOW",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 0,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.3139,
+            "expected_value": -0.1368
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.3039,
+            "expected_value": -0.1643
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0043,
+            "stressed_probability": 0.3196,
+            "expected_value": -0.121
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.957,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.795,
+            "label": "Strong"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0164,
+        "historical_sample_size": 4338,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "0 independent model support(s)"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Zaragoza|Malaga",
+        "league": "Spain-LL2",
+        "home_team": "Zaragoza",
+        "away_team": "Malaga",
+        "kickoff": "2026-05-31",
+        "selection": "OVER_2.5",
+        "market": "over_under_2_5",
+        "line": "OVER_2.5",
+        "offered_odds": 1.98,
+        "model_probability": 0.494,
+        "market_probability": 0.4793,
+        "hybrid_probability": 0.494,
+        "pure_probability": 0.4665,
+        "conservative_probability": 0.4294,
+        "break_even_probability": 0.5051,
+        "probability_edge": 0.0147,
+        "raw_expected_value": -0.0218,
+        "conservative_expected_value": -0.1498,
+        "confidence_interval_lower": 0.4294,
+        "confidence_interval_upper": 0.5587,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_DISAGREEMENT_TOO_HIGH",
+          "INSUFFICIENT_HISTORICAL_SAMPLE",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.484,
+            "expected_value": -0.0417
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.474,
+            "expected_value": -0.0615
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.02,
+            "stressed_probability": 0.474,
+            "expected_value": -0.0615
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.209,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.8,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 0.0,
+            "label": "Weak"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0893,
+        "historical_sample_size": null,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "model above market by +1.5 pts",
+          "1 independent model support(s)"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-30|Ceuta|Albacete",
+        "league": "Spain-LL2",
+        "home_team": "Ceuta",
+        "away_team": "Albacete",
+        "kickoff": "2026-05-30",
+        "selection": "OVER_2.5",
+        "market": "over_under_2_5",
+        "line": "OVER_2.5",
+        "offered_odds": 1.8,
+        "model_probability": 0.5078,
+        "market_probability": 0.5278,
+        "hybrid_probability": 0.5078,
+        "pure_probability": 0.5173,
+        "conservative_probability": 0.4689,
+        "break_even_probability": 0.5556,
+        "probability_edge": -0.02,
+        "raw_expected_value": -0.086,
+        "conservative_expected_value": -0.1559,
+        "confidence_interval_lower": 0.4689,
+        "confidence_interval_upper": 0.5466,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "INSUFFICIENT_HISTORICAL_SAMPLE",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 0,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.4978,
+            "expected_value": -0.104
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.4878,
+            "expected_value": -0.122
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.02,
+            "stressed_probability": 0.4878,
+            "expected_value": -0.122
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.24,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.8,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.529,
+            "label": "Moderate"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 0.0,
+            "label": "Weak"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0377,
+        "historical_sample_size": null,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "0 independent model support(s)"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Castellon|Eibar",
+        "league": "Spain-LL2",
+        "home_team": "Castellon",
+        "away_team": "Eibar",
+        "kickoff": "2026-05-31",
+        "selection": "H",
+        "market": "match_winner",
+        "line": "H",
+        "offered_odds": 1.51,
+        "model_probability": 0.6627,
+        "market_probability": 0.6283,
+        "hybrid_probability": 0.6627,
+        "pure_probability": 0.4232,
+        "conservative_probability": 0.5585,
+        "break_even_probability": 0.6623,
+        "probability_edge": 0.0344,
+        "raw_expected_value": 0.0007,
+        "conservative_expected_value": -0.1567,
+        "confidence_interval_lower": 0.5585,
+        "confidence_interval_upper": 0.767,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_DISAGREEMENT_TOO_HIGH",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.6527,
+            "expected_value": -0.0144
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.6427,
+            "expected_value": -0.0295
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0244,
+            "stressed_probability": 0.6383,
+            "expected_value": -0.0362
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.584,
+            "label": "Acceptable"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.756,
+            "label": "Acceptable"
+          },
+          "model_agreement": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.1596,
+        "historical_sample_size": 857,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "model above market by +3.4 pts",
+          "1 independent model support(s)"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Burgos|Andorra",
+        "league": "Spain-LL2",
+        "home_team": "Burgos",
+        "away_team": "Andorra",
+        "kickoff": "2026-05-31",
+        "selection": "H",
+        "market": "match_winner",
+        "line": "H",
+        "offered_odds": 1.49,
+        "model_probability": 0.6689,
+        "market_probability": 0.6372,
+        "hybrid_probability": 0.6689,
+        "pure_probability": 0.4326,
+        "conservative_probability": 0.5657,
+        "break_even_probability": 0.6711,
+        "probability_edge": 0.0317,
+        "raw_expected_value": -0.0033,
+        "conservative_expected_value": -0.1571,
+        "confidence_interval_lower": 0.5657,
+        "confidence_interval_upper": 0.7722,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_DISAGREEMENT_TOO_HIGH",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.6589,
+            "expected_value": -0.0182
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.6489,
+            "expected_value": -0.0331
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0244,
+            "stressed_probability": 0.6445,
+            "expected_value": -0.0397
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.598,
+            "label": "Acceptable"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.756,
+            "label": "Acceptable"
+          },
+          "model_agreement": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.1576,
+        "historical_sample_size": 857,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "model above market by +3.2 pts",
+          "1 independent model support(s)"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Cordoba|Huesca",
+        "league": "Spain-LL2",
+        "home_team": "Cordoba",
+        "away_team": "Huesca",
+        "kickoff": "2026-05-31",
+        "selection": "UNDER_2.5",
+        "market": "over_under_2_5",
+        "line": "UNDER_2.5",
+        "offered_odds": 2.0,
+        "model_probability": 0.4707,
+        "market_probability": 0.4722,
+        "hybrid_probability": 0.4707,
+        "pure_probability": 0.4755,
+        "conservative_probability": 0.4207,
+        "break_even_probability": 0.5,
+        "probability_edge": -0.0016,
+        "raw_expected_value": -0.0587,
+        "conservative_expected_value": -0.1585,
+        "confidence_interval_lower": 0.4207,
+        "confidence_interval_upper": 0.5206,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "INSUFFICIENT_HISTORICAL_SAMPLE",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.4607,
+            "expected_value": -0.0786
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.4507,
+            "expected_value": -0.0986
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.02,
+            "stressed_probability": 0.4507,
+            "expected_value": -0.0986
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.157,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.8,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.253,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 0.0,
+            "label": "Weak"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0598,
+        "historical_sample_size": null,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "1 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|La Coruna|Las Palmas",
+        "league": "Spain-LL2",
+        "home_team": "La Coruna",
+        "away_team": "Las Palmas",
+        "kickoff": "2026-05-31",
+        "selection": "A",
+        "market": "match_winner",
+        "line": "A",
+        "offered_odds": 2.1,
+        "model_probability": 0.4584,
+        "market_probability": 0.448,
+        "hybrid_probability": 0.4584,
+        "pure_probability": 0.304,
+        "conservative_probability": 0.3985,
+        "break_even_probability": 0.4762,
+        "probability_edge": 0.0104,
+        "raw_expected_value": -0.0374,
+        "conservative_expected_value": -0.1631,
+        "confidence_interval_lower": 0.3985,
+        "confidence_interval_upper": 0.5182,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_DISAGREEMENT_TOO_HIGH",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.4484,
+            "expected_value": -0.0584
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.4384,
+            "expected_value": -0.0794
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0084,
+            "stressed_probability": 0.45,
+            "expected_value": -0.0549
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.13,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.916,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.103,
+        "historical_sample_size": 2819,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "model above market by +1.0 pts",
+          "1 independent model support(s)"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Leganes|Mirandes",
+        "league": "Spain-LL2",
+        "home_team": "Leganes",
+        "away_team": "Mirandes",
+        "kickoff": "2026-05-31",
+        "selection": "D",
+        "market": "match_winner",
+        "line": "D",
+        "offered_odds": 3.5,
+        "model_probability": 0.2586,
+        "market_probability": 0.2616,
+        "hybrid_probability": 0.2586,
+        "pure_probability": 0.2961,
+        "conservative_probability": 0.239,
+        "break_even_probability": 0.2857,
+        "probability_edge": -0.0029,
+        "raw_expected_value": -0.0947,
+        "conservative_expected_value": -0.1635,
+        "confidence_interval_lower": 0.239,
+        "confidence_interval_upper": 0.2783,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_PROBABILITY_TOO_LOW",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.2486,
+            "expected_value": -0.1299
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.2386,
+            "expected_value": -0.1649
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0004,
+            "stressed_probability": 0.2582,
+            "expected_value": -0.0962
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.996,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.519,
+            "label": "Moderate"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0385,
+        "historical_sample_size": 9132,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "1 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Belgium-PL|2026-05-31|Gent|Genk",
+        "league": "Belgium-PL",
+        "home_team": "Gent",
+        "away_team": "Genk",
+        "kickoff": "2026-05-31",
+        "selection": "OVER_2.5",
+        "market": "over_under_2_5",
+        "line": "OVER_2.5",
+        "offered_odds": 1.7,
+        "model_probability": 0.522,
+        "market_probability": 0.556,
+        "hybrid_probability": 0.522,
+        "pure_probability": 0.5194,
+        "conservative_probability": 0.4878,
+        "break_even_probability": 0.5882,
+        "probability_edge": -0.0341,
+        "raw_expected_value": -0.1127,
+        "conservative_expected_value": -0.1707,
+        "confidence_interval_lower": 0.4878,
+        "confidence_interval_upper": 0.5561,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "INSUFFICIENT_HISTORICAL_SAMPLE",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 0,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.512,
+            "expected_value": -0.1296
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.502,
+            "expected_value": -0.1466
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.02,
+            "stressed_probability": 0.502,
+            "expected_value": -0.1466
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.271,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.8,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.646,
+            "label": "Acceptable"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 0.0,
+            "label": "Weak"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0283,
+        "historical_sample_size": null,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "0 independent model support(s)"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Zaragoza|Malaga",
+        "league": "Spain-LL2",
+        "home_team": "Zaragoza",
+        "away_team": "Malaga",
+        "kickoff": "2026-05-31",
+        "selection": "UNDER_2.5",
+        "market": "over_under_2_5",
+        "line": "UNDER_2.5",
+        "offered_odds": 1.83,
+        "model_probability": 0.506,
+        "market_probability": 0.5207,
+        "hybrid_probability": 0.506,
+        "pure_probability": 0.5335,
+        "conservative_probability": 0.4413,
+        "break_even_probability": 0.5464,
+        "probability_edge": -0.0147,
+        "raw_expected_value": -0.0741,
+        "conservative_expected_value": -0.1924,
+        "confidence_interval_lower": 0.4413,
+        "confidence_interval_upper": 0.5706,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_DISAGREEMENT_TOO_HIGH",
+          "INSUFFICIENT_HISTORICAL_SAMPLE",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.496,
+            "expected_value": -0.0923
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.486,
+            "expected_value": -0.1106
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.02,
+            "stressed_probability": 0.486,
+            "expected_value": -0.1106
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.236,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.8,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 0.0,
+            "label": "Weak"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0893,
+        "historical_sample_size": null,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "1 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Almeria|Valladolid",
+        "league": "Spain-LL2",
+        "home_team": "Almeria",
+        "away_team": "Valladolid",
+        "kickoff": "2026-05-31",
+        "selection": "D",
+        "market": "match_winner",
+        "line": "D",
+        "offered_odds": 5.25,
+        "model_probability": 0.1863,
+        "market_probability": 0.1659,
+        "hybrid_probability": 0.1863,
+        "pure_probability": 0.2122,
+        "conservative_probability": 0.1509,
+        "break_even_probability": 0.1905,
+        "probability_edge": 0.0204,
+        "raw_expected_value": -0.0217,
+        "conservative_expected_value": -0.2076,
+        "confidence_interval_lower": 0.1509,
+        "confidence_interval_upper": 0.2217,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "PRICE_ABOVE_VALIDATED_RANGE",
+          "MODEL_PROBABILITY_TOO_LOW",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 2,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.1763,
+            "expected_value": -0.0744
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.1663,
+            "expected_value": -0.1269
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0022,
+            "stressed_probability": 0.1841,
+            "expected_value": -0.0335
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.978,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.17,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0664,
+        "historical_sample_size": 2725,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "model above market by +2.0 pts",
+          "2 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-30|Sociedad B|Cultural Leonesa",
+        "league": "Spain-LL2",
+        "home_team": "Sociedad B",
+        "away_team": "Cultural Leonesa",
+        "kickoff": "2026-05-30",
+        "selection": "H",
+        "market": "match_winner",
+        "line": "H",
+        "offered_odds": 2.25,
+        "model_probability": 0.4094,
+        "market_probability": 0.418,
+        "hybrid_probability": 0.4094,
+        "pure_probability": 0.5571,
+        "conservative_probability": 0.3518,
+        "break_even_probability": 0.4444,
+        "probability_edge": -0.0086,
+        "raw_expected_value": -0.0789,
+        "conservative_expected_value": -0.2086,
+        "confidence_interval_lower": 0.3518,
+        "confidence_interval_upper": 0.467,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_DISAGREEMENT_TOO_HIGH",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.3994,
+            "expected_value": -0.1014
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.3894,
+            "expected_value": -0.1239
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0084,
+            "stressed_probability": 0.401,
+            "expected_value": -0.0977
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.021,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.916,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0985,
+        "historical_sample_size": 2819,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "1 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Leganes|Mirandes",
+        "league": "Spain-LL2",
+        "home_team": "Leganes",
+        "away_team": "Mirandes",
+        "kickoff": "2026-05-31",
+        "selection": "A",
+        "market": "match_winner",
+        "line": "A",
+        "offered_odds": 3.3,
+        "model_probability": 0.2565,
+        "market_probability": 0.2785,
+        "hybrid_probability": 0.2565,
+        "pure_probability": 0.2769,
+        "conservative_probability": 0.2368,
+        "break_even_probability": 0.303,
+        "probability_edge": -0.0221,
+        "raw_expected_value": -0.1537,
+        "conservative_expected_value": -0.2185,
+        "confidence_interval_lower": 0.2368,
+        "confidence_interval_upper": 0.2761,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_PROBABILITY_TOO_LOW",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 0,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.2465,
+            "expected_value": -0.1866
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.2365,
+            "expected_value": -0.2196
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0004,
+            "stressed_probability": 0.2561,
+            "expected_value": -0.1548
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.996,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.519,
+            "label": "Moderate"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0385,
+        "historical_sample_size": 9132,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "0 independent model support(s)"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-30|Sociedad B|Cultural Leonesa",
+        "league": "Spain-LL2",
+        "home_team": "Sociedad B",
+        "away_team": "Cultural Leonesa",
+        "kickoff": "2026-05-30",
+        "selection": "A",
+        "market": "match_winner",
+        "line": "A",
+        "offered_odds": 3.1,
+        "model_probability": 0.3049,
+        "market_probability": 0.2983,
+        "hybrid_probability": 0.3049,
+        "pure_probability": 0.1926,
+        "conservative_probability": 0.2514,
+        "break_even_probability": 0.3226,
+        "probability_edge": 0.0066,
+        "raw_expected_value": -0.0547,
+        "conservative_expected_value": -0.2205,
+        "confidence_interval_lower": 0.2514,
+        "confidence_interval_upper": 0.3585,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_PROBABILITY_TOO_LOW",
+          "MODEL_DISAGREEMENT_TOO_HIGH",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.2949,
+            "expected_value": -0.0858
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.2849,
+            "expected_value": -0.1168
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0043,
+            "stressed_probability": 0.3006,
+            "expected_value": -0.068
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.957,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0985,
+        "historical_sample_size": 4338,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "model above market by +0.7 pts",
+          "1 independent model support(s)"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Almeria|Valladolid",
+        "league": "Spain-LL2",
+        "home_team": "Almeria",
+        "away_team": "Valladolid",
+        "kickoff": "2026-05-31",
+        "selection": "UNDER_2.5",
+        "market": "over_under_2_5",
+        "line": "UNDER_2.5",
+        "offered_odds": 2.4,
+        "model_probability": 0.377,
+        "market_probability": 0.3815,
+        "hybrid_probability": 0.377,
+        "pure_probability": 0.3923,
+        "conservative_probability": 0.3238,
+        "break_even_probability": 0.4167,
+        "probability_edge": -0.0045,
+        "raw_expected_value": -0.0952,
+        "conservative_expected_value": -0.2229,
+        "confidence_interval_lower": 0.3238,
+        "confidence_interval_upper": 0.4302,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_PROBABILITY_TOO_LOW",
+          "INSUFFICIENT_HISTORICAL_SAMPLE",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.367,
+            "expected_value": -0.1192
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.357,
+            "expected_value": -0.1432
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.02,
+            "stressed_probability": 0.357,
+            "expected_value": -0.1432
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.8,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.17,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 0.0,
+            "label": "Weak"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0664,
+        "historical_sample_size": null,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "1 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-30|Sociedad B|Cultural Leonesa",
+        "league": "Spain-LL2",
+        "home_team": "Sociedad B",
+        "away_team": "Cultural Leonesa",
+        "kickoff": "2026-05-30",
+        "selection": "D",
+        "market": "match_winner",
+        "line": "D",
+        "offered_odds": 3.25,
+        "model_probability": 0.2857,
+        "market_probability": 0.2837,
+        "hybrid_probability": 0.2857,
+        "pure_probability": 0.2503,
+        "conservative_probability": 0.2361,
+        "break_even_probability": 0.3077,
+        "probability_edge": 0.002,
+        "raw_expected_value": -0.0716,
+        "conservative_expected_value": -0.2328,
+        "confidence_interval_lower": 0.2361,
+        "confidence_interval_upper": 0.3353,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_PROBABILITY_TOO_LOW",
+          "MODEL_DISAGREEMENT_TOO_HIGH",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.2757,
+            "expected_value": -0.104
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.2657,
+            "expected_value": -0.1365
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0004,
+            "stressed_probability": 0.2853,
+            "expected_value": -0.0727
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.996,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0985,
+        "historical_sample_size": 9132,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "model above market by +0.2 pts",
+          "1 independent model support(s)"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|La Coruna|Las Palmas",
+        "league": "Spain-LL2",
+        "home_team": "La Coruna",
+        "away_team": "Las Palmas",
+        "kickoff": "2026-05-31",
+        "selection": "H",
+        "market": "match_winner",
+        "line": "H",
+        "offered_odds": 3.25,
+        "model_probability": 0.2855,
+        "market_probability": 0.2827,
+        "hybrid_probability": 0.2855,
+        "pure_probability": 0.4033,
+        "conservative_probability": 0.2337,
+        "break_even_probability": 0.3077,
+        "probability_edge": 0.0029,
+        "raw_expected_value": -0.0721,
+        "conservative_expected_value": -0.2406,
+        "confidence_interval_lower": 0.2337,
+        "confidence_interval_upper": 0.3374,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_PROBABILITY_TOO_LOW",
+          "MODEL_DISAGREEMENT_TOO_HIGH",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 2,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.2755,
+            "expected_value": -0.1046
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.2655,
+            "expected_value": -0.1371
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0004,
+            "stressed_probability": 0.2851,
+            "expected_value": -0.0733
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.996,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.103,
+        "historical_sample_size": 9132,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "model above market by +0.3 pts",
+          "2 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Zaragoza|Malaga",
+        "league": "Spain-LL2",
+        "home_team": "Zaragoza",
+        "away_team": "Malaga",
+        "kickoff": "2026-05-31",
+        "selection": "H",
+        "market": "match_winner",
+        "line": "H",
+        "offered_odds": 4.75,
+        "model_probability": 0.202,
+        "market_probability": 0.1888,
+        "hybrid_probability": 0.202,
+        "pure_probability": 0.2654,
+        "conservative_probability": 0.157,
+        "break_even_probability": 0.2105,
+        "probability_edge": 0.0132,
+        "raw_expected_value": -0.0406,
+        "conservative_expected_value": -0.2545,
+        "confidence_interval_lower": 0.157,
+        "confidence_interval_upper": 0.247,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "PRICE_ABOVE_VALIDATED_RANGE",
+          "MODEL_PROBABILITY_TOO_LOW",
+          "MODEL_DISAGREEMENT_TOO_HIGH",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 2,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.192,
+            "expected_value": -0.088
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.182,
+            "expected_value": -0.1355
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0004,
+            "stressed_probability": 0.2016,
+            "expected_value": -0.0423
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.996,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0893,
+        "historical_sample_size": 9132,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "model above market by +1.3 pts",
+          "2 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Cordoba|Huesca",
+        "league": "Spain-LL2",
+        "home_team": "Cordoba",
+        "away_team": "Huesca",
+        "kickoff": "2026-05-31",
+        "selection": "A",
+        "market": "match_winner",
+        "line": "A",
+        "offered_odds": 5.5,
+        "model_probability": 0.1673,
+        "market_probability": 0.159,
+        "hybrid_probability": 0.1673,
+        "pure_probability": 0.253,
+        "conservative_probability": 0.1352,
+        "break_even_probability": 0.1818,
+        "probability_edge": 0.0083,
+        "raw_expected_value": -0.0799,
+        "conservative_expected_value": -0.2565,
+        "confidence_interval_lower": 0.1352,
+        "confidence_interval_upper": 0.1994,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "PRICE_ABOVE_VALIDATED_RANGE",
+          "MODEL_PROBABILITY_TOO_LOW",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 2,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.1573,
+            "expected_value": -0.1349
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.1473,
+            "expected_value": -0.1898
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0022,
+            "stressed_probability": 0.1651,
+            "expected_value": -0.0919
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.978,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.253,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0598,
+        "historical_sample_size": 2725,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "model above market by +0.8 pts",
+          "2 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|La Coruna|Las Palmas",
+        "league": "Spain-LL2",
+        "home_team": "La Coruna",
+        "away_team": "Las Palmas",
+        "kickoff": "2026-05-31",
+        "selection": "OVER_2.5",
+        "market": "over_under_2_5",
+        "line": "OVER_2.5",
+        "offered_odds": 2.05,
+        "model_probability": 0.417,
+        "market_probability": 0.4582,
+        "hybrid_probability": 0.417,
+        "pure_probability": 0.4073,
+        "conservative_probability": 0.3456,
+        "break_even_probability": 0.4878,
+        "probability_edge": -0.0411,
+        "raw_expected_value": -0.1451,
+        "conservative_expected_value": -0.2916,
+        "confidence_interval_lower": 0.3456,
+        "confidence_interval_upper": 0.4885,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_DISAGREEMENT_TOO_HIGH",
+          "INSUFFICIENT_HISTORICAL_SAMPLE",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 0,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.407,
+            "expected_value": -0.1657
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.397,
+            "expected_value": -0.1862
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.02,
+            "stressed_probability": 0.397,
+            "expected_value": -0.1862
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.038,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.8,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 0.0,
+            "label": "Weak"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.103,
+        "historical_sample_size": null,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "0 independent model support(s)"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Cordoba|Huesca",
+        "league": "Spain-LL2",
+        "home_team": "Cordoba",
+        "away_team": "Huesca",
+        "kickoff": "2026-05-31",
+        "selection": "D",
+        "market": "match_winner",
+        "line": "D",
+        "offered_odds": 3.2,
+        "model_probability": 0.2504,
+        "market_probability": 0.2869,
+        "hybrid_probability": 0.2504,
+        "pure_probability": 0.2544,
+        "conservative_probability": 0.2201,
+        "break_even_probability": 0.3125,
+        "probability_edge": -0.0365,
+        "raw_expected_value": -0.1989,
+        "conservative_expected_value": -0.2958,
+        "confidence_interval_lower": 0.2201,
+        "confidence_interval_upper": 0.2807,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_PROBABILITY_TOO_LOW",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 0,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.2404,
+            "expected_value": -0.2307
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.2304,
+            "expected_value": -0.2627
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0004,
+            "stressed_probability": 0.25,
+            "expected_value": -0.1999
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.996,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.253,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0598,
+        "historical_sample_size": 9132,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "0 independent model support(s)"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-30|Sociedad B|Cultural Leonesa",
+        "league": "Spain-LL2",
+        "home_team": "Sociedad B",
+        "away_team": "Cultural Leonesa",
+        "kickoff": "2026-05-30",
+        "selection": "OVER_2.5",
+        "market": "over_under_2_5",
+        "line": "OVER_2.5",
+        "offered_odds": 1.8,
+        "model_probability": 0.4582,
+        "market_probability": 0.5278,
+        "hybrid_probability": 0.4582,
+        "pure_probability": 0.4793,
+        "conservative_probability": 0.389,
+        "break_even_probability": 0.5556,
+        "probability_edge": -0.0696,
+        "raw_expected_value": -0.1752,
+        "conservative_expected_value": -0.2999,
+        "confidence_interval_lower": 0.389,
+        "confidence_interval_upper": 0.5275,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_DISAGREEMENT_TOO_HIGH",
+          "INSUFFICIENT_HISTORICAL_SAMPLE",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 0,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.4482,
+            "expected_value": -0.1932
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.4382,
+            "expected_value": -0.2112
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.02,
+            "stressed_probability": 0.4382,
+            "expected_value": -0.2112
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.129,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.8,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 0.0,
+            "label": "Weak"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0985,
+        "historical_sample_size": null,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "0 independent model support(s)"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|La Coruna|Las Palmas",
+        "league": "Spain-LL2",
+        "home_team": "La Coruna",
+        "away_team": "Las Palmas",
+        "kickoff": "2026-05-31",
+        "selection": "D",
+        "market": "match_winner",
+        "line": "D",
+        "offered_odds": 3.4,
+        "model_probability": 0.2561,
+        "market_probability": 0.2694,
+        "hybrid_probability": 0.2561,
+        "pure_probability": 0.2927,
+        "conservative_probability": 0.2042,
+        "break_even_probability": 0.2941,
+        "probability_edge": -0.0133,
+        "raw_expected_value": -0.1293,
+        "conservative_expected_value": -0.3056,
+        "confidence_interval_lower": 0.2042,
+        "confidence_interval_upper": 0.3079,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_PROBABILITY_TOO_LOW",
+          "MODEL_DISAGREEMENT_TOO_HIGH",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.2461,
+            "expected_value": -0.1633
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.2361,
+            "expected_value": -0.1973
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0004,
+            "stressed_probability": 0.2557,
+            "expected_value": -0.1305
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.996,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.103,
+        "historical_sample_size": 9132,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "1 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Leganes|Mirandes",
+        "league": "Spain-LL2",
+        "home_team": "Leganes",
+        "away_team": "Mirandes",
+        "kickoff": "2026-05-31",
+        "selection": "OVER_2.5",
+        "market": "over_under_2_5",
+        "line": "OVER_2.5",
+        "offered_odds": 1.83,
+        "model_probability": 0.4,
+        "market_probability": 0.5207,
+        "hybrid_probability": 0.4,
+        "pure_probability": 0.3868,
+        "conservative_probability": 0.3607,
+        "break_even_probability": 0.5464,
+        "probability_edge": -0.1207,
+        "raw_expected_value": -0.268,
+        "conservative_expected_value": -0.3398,
+        "confidence_interval_lower": 0.3607,
+        "confidence_interval_upper": 0.4393,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "INSUFFICIENT_HISTORICAL_SAMPLE",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 0,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.39,
+            "expected_value": -0.2863
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.38,
+            "expected_value": -0.3046
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.02,
+            "stressed_probability": 0.38,
+            "expected_value": -0.3046
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.8,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.519,
+            "label": "Moderate"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 0.0,
+            "label": "Weak"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0385,
+        "historical_sample_size": null,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "0 independent model support(s)"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Santander|Cadiz",
+        "league": "Spain-LL2",
+        "home_team": "Santander",
+        "away_team": "Cadiz",
+        "kickoff": "2026-05-31",
+        "selection": "UNDER_2.5",
+        "market": "over_under_2_5",
+        "line": "UNDER_2.5",
+        "offered_odds": 2.4,
+        "model_probability": 0.3275,
+        "market_probability": 0.3815,
+        "hybrid_probability": 0.3275,
+        "pure_probability": 0.3437,
+        "conservative_probability": 0.2705,
+        "break_even_probability": 0.4167,
+        "probability_edge": -0.0541,
+        "raw_expected_value": -0.2141,
+        "conservative_expected_value": -0.3509,
+        "confidence_interval_lower": 0.2705,
+        "confidence_interval_upper": 0.3845,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_PROBABILITY_TOO_LOW",
+          "INSUFFICIENT_HISTORICAL_SAMPLE",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 0,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.3175,
+            "expected_value": -0.238
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.3075,
+            "expected_value": -0.262
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.02,
+            "stressed_probability": 0.3075,
+            "expected_value": -0.262
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.8,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.075,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 0.0,
+            "label": "Weak"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.074,
+        "historical_sample_size": null,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "0 independent model support(s)"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Santander|Cadiz",
+        "league": "Spain-LL2",
+        "home_team": "Santander",
+        "away_team": "Cadiz",
+        "kickoff": "2026-05-31",
+        "selection": "D",
+        "market": "match_winner",
+        "line": "D",
+        "offered_odds": 4.75,
+        "model_probability": 0.1673,
+        "market_probability": 0.1831,
+        "hybrid_probability": 0.1673,
+        "pure_probability": 0.1914,
+        "conservative_probability": 0.1281,
+        "break_even_probability": 0.2105,
+        "probability_edge": -0.0157,
+        "raw_expected_value": -0.2051,
+        "conservative_expected_value": -0.3914,
+        "confidence_interval_lower": 0.1281,
+        "confidence_interval_upper": 0.2066,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "PRICE_ABOVE_VALIDATED_RANGE",
+          "MODEL_PROBABILITY_TOO_LOW",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.1573,
+            "expected_value": -0.2528
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.1473,
+            "expected_value": -0.3003
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0022,
+            "stressed_probability": 0.1651,
+            "expected_value": -0.2158
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.978,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.075,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.074,
+        "historical_sample_size": 2725,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "1 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Castellon|Eibar",
+        "league": "Spain-LL2",
+        "home_team": "Castellon",
+        "away_team": "Eibar",
+        "kickoff": "2026-05-31",
+        "selection": "OVER_2.5",
+        "market": "over_under_2_5",
+        "line": "OVER_2.5",
+        "offered_odds": 1.57,
+        "model_probability": 0.4822,
+        "market_probability": 0.6057,
+        "hybrid_probability": 0.4822,
+        "pure_probability": 0.4563,
+        "conservative_probability": 0.3824,
+        "break_even_probability": 0.6369,
+        "probability_edge": -0.1235,
+        "raw_expected_value": -0.2429,
+        "conservative_expected_value": -0.3997,
+        "confidence_interval_lower": 0.3824,
+        "confidence_interval_upper": 0.582,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_DISAGREEMENT_TOO_HIGH",
+          "INSUFFICIENT_HISTORICAL_SAMPLE",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 0,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.4722,
+            "expected_value": -0.2586
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.4622,
+            "expected_value": -0.2743
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.02,
+            "stressed_probability": 0.4622,
+            "expected_value": -0.2743
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.183,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.8,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 0.0,
+            "label": "Weak"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.1596,
+        "historical_sample_size": null,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "0 independent model support(s)"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Castellon|Eibar",
+        "league": "Spain-LL2",
+        "home_team": "Castellon",
+        "away_team": "Eibar",
+        "kickoff": "2026-05-31",
+        "selection": "D",
+        "market": "match_winner",
+        "line": "D",
+        "offered_odds": 4.33,
+        "model_probability": 0.2155,
+        "market_probability": 0.2056,
+        "hybrid_probability": 0.2155,
+        "pure_probability": 0.2786,
+        "conservative_probability": 0.1354,
+        "break_even_probability": 0.2309,
+        "probability_edge": 0.01,
+        "raw_expected_value": -0.0667,
+        "conservative_expected_value": -0.4139,
+        "confidence_interval_lower": 0.1354,
+        "confidence_interval_upper": 0.2957,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "PRICE_ABOVE_VALIDATED_RANGE",
+          "MODEL_PROBABILITY_TOO_LOW",
+          "MODEL_DISAGREEMENT_TOO_HIGH",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 2,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.2055,
+            "expected_value": -0.1102
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.1955,
+            "expected_value": -0.1535
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0004,
+            "stressed_probability": 0.2151,
+            "expected_value": -0.0685
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.996,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.1596,
+        "historical_sample_size": 9132,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "model above market by +1.0 pts",
+          "2 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Zaragoza|Malaga",
+        "league": "Spain-LL2",
+        "home_team": "Zaragoza",
+        "away_team": "Malaga",
+        "kickoff": "2026-05-31",
+        "selection": "D",
+        "market": "match_winner",
+        "line": "D",
+        "offered_odds": 3.6,
+        "model_probability": 0.201,
+        "market_probability": 0.2548,
+        "hybrid_probability": 0.201,
+        "pure_probability": 0.2716,
+        "conservative_probability": 0.1559,
+        "break_even_probability": 0.2778,
+        "probability_edge": -0.0538,
+        "raw_expected_value": -0.2765,
+        "conservative_expected_value": -0.4386,
+        "confidence_interval_lower": 0.1559,
+        "confidence_interval_upper": 0.246,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_PROBABILITY_TOO_LOW",
+          "MODEL_DISAGREEMENT_TOO_HIGH",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.191,
+            "expected_value": -0.3124
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.181,
+            "expected_value": -0.3484
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0004,
+            "stressed_probability": 0.2006,
+            "expected_value": -0.2777
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.996,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0893,
+        "historical_sample_size": 9132,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "1 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Burgos|Andorra",
+        "league": "Spain-LL2",
+        "home_team": "Burgos",
+        "away_team": "Andorra",
+        "kickoff": "2026-05-31",
+        "selection": "D",
+        "market": "match_winner",
+        "line": "D",
+        "offered_odds": 4.2,
+        "model_probability": 0.2121,
+        "market_probability": 0.2127,
+        "hybrid_probability": 0.2121,
+        "pure_probability": 0.3062,
+        "conservative_probability": 0.1329,
+        "break_even_probability": 0.2381,
+        "probability_edge": -0.0006,
+        "raw_expected_value": -0.1093,
+        "conservative_expected_value": -0.4418,
+        "confidence_interval_lower": 0.1329,
+        "confidence_interval_upper": 0.2912,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "PRICE_ABOVE_VALIDATED_RANGE",
+          "MODEL_PROBABILITY_TOO_LOW",
+          "MODEL_DISAGREEMENT_TOO_HIGH",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.2021,
+            "expected_value": -0.1512
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.1921,
+            "expected_value": -0.1932
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0004,
+            "stressed_probability": 0.2117,
+            "expected_value": -0.1108
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.996,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.1576,
+        "historical_sample_size": 9132,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "1 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Burgos|Andorra",
+        "league": "Spain-LL2",
+        "home_team": "Burgos",
+        "away_team": "Andorra",
+        "kickoff": "2026-05-31",
+        "selection": "OVER_2.5",
+        "market": "over_under_2_5",
+        "line": "OVER_2.5",
+        "offered_odds": 1.95,
+        "model_probability": 0.3842,
+        "market_probability": 0.4861,
+        "hybrid_probability": 0.3842,
+        "pure_probability": 0.3487,
+        "conservative_probability": 0.2854,
+        "break_even_probability": 0.5128,
+        "probability_edge": -0.1019,
+        "raw_expected_value": -0.2508,
+        "conservative_expected_value": -0.4434,
+        "confidence_interval_lower": 0.2854,
+        "confidence_interval_upper": 0.483,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "MODEL_PROBABILITY_TOO_LOW",
+          "MODEL_DISAGREEMENT_TOO_HIGH",
+          "INSUFFICIENT_HISTORICAL_SAMPLE",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 0,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.3742,
+            "expected_value": -0.2703
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.3642,
+            "expected_value": -0.2898
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.02,
+            "stressed_probability": 0.3642,
+            "expected_value": -0.2898
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.8,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 0.0,
+            "label": "Weak"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.1576,
+        "historical_sample_size": null,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "0 independent model support(s)"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Almeria|Valladolid",
+        "league": "Spain-LL2",
+        "home_team": "Almeria",
+        "away_team": "Valladolid",
+        "kickoff": "2026-05-31",
+        "selection": "A",
+        "market": "match_winner",
+        "line": "A",
+        "offered_odds": 5.75,
+        "model_probability": 0.1011,
+        "market_probability": 0.1498,
+        "hybrid_probability": 0.1011,
+        "pure_probability": 0.1748,
+        "conservative_probability": 0.0657,
+        "break_even_probability": 0.1739,
+        "probability_edge": -0.0487,
+        "raw_expected_value": -0.4188,
+        "conservative_expected_value": -0.6223,
+        "confidence_interval_lower": 0.0657,
+        "confidence_interval_upper": 0.1365,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "PRICE_ABOVE_VALIDATED_RANGE",
+          "MODEL_PROBABILITY_TOO_LOW",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.0911,
+            "expected_value": -0.4762
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.0811,
+            "expected_value": -0.5337
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0022,
+            "stressed_probability": 0.0989,
+            "expected_value": -0.4313
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.978,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.17,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.0664,
+        "historical_sample_size": 2725,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "1 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Burgos|Andorra",
+        "league": "Spain-LL2",
+        "home_team": "Burgos",
+        "away_team": "Andorra",
+        "kickoff": "2026-05-31",
+        "selection": "A",
+        "market": "match_winner",
+        "line": "A",
+        "offered_odds": 5.75,
+        "model_probability": 0.119,
+        "market_probability": 0.1501,
+        "hybrid_probability": 0.119,
+        "pure_probability": 0.2612,
+        "conservative_probability": 0.038,
+        "break_even_probability": 0.1739,
+        "probability_edge": -0.0311,
+        "raw_expected_value": -0.3158,
+        "conservative_expected_value": -0.7815,
+        "confidence_interval_lower": 0.038,
+        "confidence_interval_upper": 0.2,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "PRICE_ABOVE_VALIDATED_RANGE",
+          "MODEL_PROBABILITY_TOO_LOW",
+          "MODEL_DISAGREEMENT_TOO_HIGH",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.109,
+            "expected_value": -0.3732
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.099,
+            "expected_value": -0.4308
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0022,
+            "stressed_probability": 0.1168,
+            "expected_value": -0.3284
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.978,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.1576,
+        "historical_sample_size": 2725,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "1 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Castellon|Eibar",
+        "league": "Spain-LL2",
+        "home_team": "Castellon",
+        "away_team": "Eibar",
+        "kickoff": "2026-05-31",
+        "selection": "A",
+        "market": "match_winner",
+        "line": "A",
+        "offered_odds": 5.25,
+        "model_probability": 0.1217,
+        "market_probability": 0.1661,
+        "hybrid_probability": 0.1217,
+        "pure_probability": 0.2982,
+        "conservative_probability": 0.0397,
+        "break_even_probability": 0.1905,
+        "probability_edge": -0.0444,
+        "raw_expected_value": -0.3609,
+        "conservative_expected_value": -0.7915,
+        "confidence_interval_lower": 0.0397,
+        "confidence_interval_upper": 0.2038,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "PRICE_ABOVE_VALIDATED_RANGE",
+          "MODEL_PROBABILITY_TOO_LOW",
+          "MODEL_DISAGREEMENT_TOO_HIGH",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.1117,
+            "expected_value": -0.4136
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.1017,
+            "expected_value": -0.4661
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0022,
+            "stressed_probability": 0.1195,
+            "expected_value": -0.3726
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.978,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 1.0,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.1596,
+        "historical_sample_size": 2725,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "1 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      },
+      {
+        "bet_mode": "smart",
+        "fixture_id": "Spain-LL2|2026-05-31|Santander|Cadiz",
+        "league": "Spain-LL2",
+        "home_team": "Santander",
+        "away_team": "Cadiz",
+        "kickoff": "2026-05-31",
+        "selection": "A",
+        "market": "match_winner",
+        "line": "A",
+        "offered_odds": 9.0,
+        "model_probability": 0.0641,
+        "market_probability": 0.0868,
+        "hybrid_probability": 0.0641,
+        "pure_probability": 0.1511,
+        "conservative_probability": 0.0165,
+        "break_even_probability": 0.1111,
+        "probability_edge": -0.0228,
+        "raw_expected_value": -0.4234,
+        "conservative_expected_value": -0.8517,
+        "confidence_interval_lower": 0.0165,
+        "confidence_interval_upper": 0.1116,
+        "smart_bet_score": 0.0,
+        "high_return_score": null,
+        "decision_status": "NO BET",
+        "rejection_reasons": [
+          "PRICE_ABOVE_VALIDATED_RANGE",
+          "MODEL_PROBABILITY_TOO_LOW",
+          "NO_POSITIVE_CONSERVATIVE_EV",
+          "EDGE_BELOW_THRESHOLD"
+        ],
+        "model_support_count": 1,
+        "stress_test_results": [
+          {
+            "scenario": "minus_1pt",
+            "delta": 0.01,
+            "stressed_probability": 0.0541,
+            "expected_value": -0.5131
+          },
+          {
+            "scenario": "minus_2pt",
+            "delta": 0.02,
+            "stressed_probability": 0.0441,
+            "expected_value": -0.6031
+          },
+          {
+            "scenario": "minus_calibration_error",
+            "delta": 0.0106,
+            "stressed_probability": 0.0535,
+            "expected_value": -0.5182
+          }
+        ],
+        "score_components": {
+          "probability_quality": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "conservative_ev": {
+            "value": 0.0,
+            "label": "Weak"
+          },
+          "calibration": {
+            "value": 0.894,
+            "label": "Strong"
+          },
+          "model_agreement": {
+            "value": 0.075,
+            "label": "Weak"
+          },
+          "data_quality": {
+            "value": 1.0,
+            "label": "Strong"
+          },
+          "historical_stability": {
+            "value": 0.846,
+            "label": "Strong"
+          }
+        },
+        "data_quality": 1.0,
+        "model_disagreement": 0.074,
+        "historical_sample_size": 677,
+        "model_version": null,
+        "odds_timestamp": "2026-07-11T20:55:06.560848713+00:00",
+        "prediction_timestamp": "2026-07-11T22:00:06.276447+00:00",
+        "supporting_evidence": [
+          "1 independent model support(s)",
+          "pure model independently beats the market"
+        ],
+        "risk_warnings": [],
+        "is_primary": false
+      }
+    ]
+  }
+}

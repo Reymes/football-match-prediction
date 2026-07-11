@@ -335,6 +335,19 @@
   .sync-card .nm{font-weight:750;font-size:15px}
   .sync-card .desc{color:var(--muted);font-size:12.5px;margin:6px 0 12px;line-height:1.55;min-height:52px}
 
+  /* tools console */
+  .tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:13px}
+  .tool-card{background:var(--panel2);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:flex;flex-direction:column}
+  .tool-card:hover{border-color:var(--line-2)}
+  .tool-card .nm{font-weight:750;font-size:14.5px}
+  .tool-card .desc{color:var(--muted);font-size:12px;margin:5px 0 11px;line-height:1.5;min-height:48px}
+  .tool-params{display:flex;flex-direction:column;gap:8px;margin-bottom:11px}
+  .tool-params label{font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);font-weight:700;display:block;margin-bottom:3px}
+  .tool-params input,.tool-params select{width:100%;background:var(--well);border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:7px 9px;font-size:12.5px;font-family:inherit}
+  .tool-params details{font-size:11.5px;color:var(--muted)}
+  .tool-params details summary{cursor:pointer;padding:2px 0}
+  .tool-card .btn{margin-top:auto}
+
   /* ---------------- progress ---------------- */
   .prog{margin-top:16px}
   .prog .top{display:flex;align-items:center;gap:11px;margin-bottom:10px}
@@ -504,6 +517,7 @@
     <div class="tab" data-tab="bets">My Bets</div>
     <div class="tab" data-tab="data">Data &amp; Sync</div>
     <div class="tab" data-tab="models">Models</div>
+    <div class="tab" data-tab="tools">Tools</div>
   </div>
 
   {% if not model_ready %}
@@ -634,6 +648,17 @@
       Evaluation runs the honest walk-forward backtest. Both take a few minutes on the full dataset.</div>
     <div id="models_err" class="err hidden"></div>
     <div id="models_body"></div>
+  </section>
+
+  <!-- ============ TOOLS (script console) ============ -->
+  <section id="tools" class="card hidden">
+    <div style="font-weight:700;font-size:16px;margin-bottom:4px">Tools — run project scripts</div>
+    <div class="hint">Run backtests, research and reports straight from here. Each script runs on the
+      server (one job at a time) and streams its output into the progress panel below. Advisory /
+      research only — nothing places a bet. Training &amp; data sync live on the <b>Models</b> and
+      <b>Data &amp; Sync</b> tabs (they hot-reload the served model).</div>
+    <div id="tools_err" class="err hidden" style="margin-top:10px"></div>
+    <div id="tools_body" class="tools-grid" style="margin-top:14px"></div>
   </section>
 
   <!-- shared job progress panel -->
@@ -780,8 +805,9 @@ document.querySelectorAll(".tab").forEach(t=>t.onclick=()=>{
   document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));
   t.classList.add("active");
   const tab=t.dataset.tab;
-  ["single","fixtures","decisions","bets","data","models"].forEach(id=>$(id)?.classList.toggle("hidden",id!==tab));
+  ["single","fixtures","decisions","bets","data","models","tools"].forEach(id=>$(id)?.classList.toggle("hidden",id!==tab));
   if(tab==="models") loadModels();
+  if(tab==="tools") loadTools();
   if(tab==="data") loadDataStatus();
   if(tab==="fixtures") loadFixtures();
   if(tab==="decisions") loadDecView();
@@ -1468,6 +1494,7 @@ async function pollJob(){
 function enableButtons(on){
   ["btn_train","btn_eval","fx_sync","bets_settle","bets_reset"].forEach(id=>{const el=$(id);if(el)el.disabled=!on;});
   document.querySelectorAll("[data-sync]").forEach(b=>b.disabled=!on);
+  document.querySelectorAll(".tool-run").forEach(b=>b.disabled=!on);
 }
 async function refreshAfterJob(kind){
   try{
@@ -1499,6 +1526,58 @@ function startSync(mode){
   fetch("/api/sync",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({mode})})
     .then(r=>r.json().then(d=>({ok:r.ok,d}))).then(({ok,d})=>{
       if(!ok){enableButtons(true);alert(d.error||"could not start sync");return;}
+      $("job_panel").classList.remove("hidden");
+      if(pollTimer)clearInterval(pollTimer);pollTimer=setInterval(pollJob,1200);pollJob();
+    });
+}
+
+// ============ TOOLS (script console) ============
+let TOOLS_CACHE=null;
+async function loadTools(){
+  const body=$("tools_body"),err=$("tools_err");err.classList.add("hidden");
+  if(!TOOLS_CACHE){
+    try{
+      const r=await fetch("/api/tools");const d=await r.json();
+      if(!r.ok) throw new Error(d.error||"could not load tools");
+      TOOLS_CACHE=d.tools||[];
+    }catch(e){err.textContent=e.message;err.classList.remove("hidden");return;}
+  }
+  body.innerHTML=TOOLS_CACHE.map(toolCard).join("");
+  TOOLS_CACHE.forEach(t=>{const b=$("run_"+t.id);if(b)b.onclick=()=>runTool(t.id);});
+}
+function paramField(tid,p){
+  const id=`p_${tid}_${p.name}`;
+  const lbl=`<label for="${id}">${p.name.replace(/_/g," ")}</label>`;
+  if(p.type==="choice"){
+    const opts=(p.choices||[]).map(c=>`<option value="${c}" ${c===p.default?"selected":""}>${c===""?"(none)":c}</option>`).join("");
+    return `<div>${lbl}<select id="${id}" data-p="${p.name}">${opts}</select></div>`;
+  }
+  const t=p.type==="int"?"number":"text";
+  return `<div>${lbl}<input id="${id}" data-p="${p.name}" type="${t}" value="${p.default??""}"></div>`;
+}
+function toolCard(t){
+  const fields=(t.params||[]).map(p=>paramField(t.id,p)).join("");
+  return `<div class="tool-card">
+    <div class="nm">${t.label}</div>
+    <div class="desc">${t.desc||""}</div>
+    <div class="tool-params">${fields}
+      <details><summary>Advanced args</summary>
+        <input id="p_${t.id}_extra_args" data-p="extra_args" type="text" placeholder="--flag value"></details>
+    </div>
+    <button class="btn wide tool-run" id="run_${t.id}">Run</button>
+  </div>`;
+}
+function runTool(tid){
+  const params={};
+  document.querySelectorAll(`#tools_body [data-p]`).forEach(el=>{
+    if(el.id.startsWith(`p_${tid}_`)) params[el.dataset.p]=el.value;
+  });
+  $("tools_err").classList.add("hidden");
+  enableButtons(false);
+  fetch("/api/tools/run",{method:"POST",headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({tool:tid,params})})
+    .then(r=>r.json().then(d=>({ok:r.ok,d}))).then(({ok,d})=>{
+      if(!ok){enableButtons(true);const e=$("tools_err");e.textContent=d.error||"could not start";e.classList.remove("hidden");return;}
       $("job_panel").classList.remove("hidden");
       if(pollTimer)clearInterval(pollTimer);pollTimer=setInterval(pollJob,1200);pollJob();
     });

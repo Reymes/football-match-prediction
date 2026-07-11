@@ -1,0 +1,94 @@
+{
+  "val_start": "2024-08-01",
+  "test_start": "2025-08-01",
+  "modes": {
+    "smart": {
+      "mode": "smart",
+      "profile_passed": true,
+      "forecast_quality": {
+        "pure": {
+          "log_loss": 1.0043,
+          "brier": 0.6009,
+          "rps": 0.2041,
+          "ece": 0.013,
+          "accuracy": 0.5056,
+          "n": 7626
+        },
+        "market": {
+          "log_loss": 1.0026,
+          "brier": 0.5998,
+          "rps": 0.2038,
+          "ece": 0.0135,
+          "accuracy": 0.5056,
+          "n": 7626
+        },
+        "hybrid": {
+          "log_loss": 1.0026,
+          "brier": 0.5999,
+          "rps": 0.2037,
+          "ece": 0.0115,
+          "accuracy": 0.5083,
+          "n": 7626
+        }
+      },
+      "performance": {
+        "mode": "smart",
+        "n_fixtures": 7626,
+        "n_selections": 0,
+        "n_no_bet": 7626,
+        "selection_rate": 0.0
+      },
+      "stability": {},
+      "calibration_selected": {},
+      "per_league": [],
+      "per_odds_band": [],
+      "notes": [
+        "match_winner passed out-of-time validation quality."
+      ]
+    },
+    "high_return": {
+      "mode": "high_return",
+      "profile_passed": true,
+      "forecast_quality": {
+        "pure": {
+          "log_loss": 1.0043,
+          "brier": 0.6009,
+          "rps": 0.2041,
+          "ece": 0.013,
+          "accuracy": 0.5056,
+          "n": 7626
+        },
+        "market": {
+          "log_loss": 1.0026,
+          "brier": 0.5998,
+          "rps": 0.2038,
+          "ece": 0.0135,
+          "accuracy": 0.5056,
+          "n": 7626
+        },
+        "hybrid": {
+          "log_loss": 1.0026,
+          "brier": 0.5999,
+          "rps": 0.2037,
+          "ece": 0.0115,
+          "accuracy": 0.5083,
+          "n": 7626
+        }
+      },
+      "performance": {
+        "mode": "high_return",
+        "n_fixtures": 7626,
+        "n_selections": 0,
+        "n_no_bet": 7626,
+        "selection_rate": 0.0
+      },
+      "stability": {},
+      "calibration_selected": {},
+      "per_league": [],
+      "per_odds_band": [],
+      "notes": [
+        "match_winner passed out-of-time validation quality. High-return strategies are expected to have a LOW hit rate and high variance; see the top-win-removal stability report (\u00a717)."
+      ]
+    }
+  }
+}

@@ -15,6 +15,9 @@ from __future__ import annotations
 
 import io
 import os
+import shlex
+import subprocess
+import sys
 import threading
 import traceback
 import warnings
@@ -822,6 +825,167 @@ def api_evaluate():
     if not JOBS.start("evaluate", job):
         return jsonify({"error": f"a {JOBS.kind} job is already running"}), 409
     return jsonify({"started": True, "kind": "evaluate"})
+
+
+# ---- script console (run project scripts from the UI, safely) --------------
+# A WHITELIST of runnable scripts with TYPED params. Scripts run as
+# `python -m <module> [flags]` in a subprocess with NO shell, so nothing here
+# can inject a shell command; only declared flags (plus optional advanced args
+# tokenised with shlex — still argv, never a shell) reach the script. Train and
+# sync are intentionally NOT here: they have dedicated endpoints that hot-reload
+# the served model / record sync metadata.
+TOOLS = [
+    {
+        "id": "research_decisions", "label": "Research decisions",
+        "module": "scripts.research_decisions",
+        "desc": "Value-scan or Smart/High-Return bet modes over upcoming fixtures. "
+                "Advisory only; writes outputs/decisions/.",
+        "params": [
+            {"name": "days", "flag": "--days", "type": "int", "default": 7},
+            {"name": "bet_mode", "flag": "--bet-mode", "type": "choice",
+             "choices": ["", "smart", "high-return", "compare"], "default": ""},
+        ],
+    },
+    {
+        "id": "backtest_bet_modes", "label": "Backtest bet modes",
+        "module": "scripts.backtest_bet_modes",
+        "desc": "Chronological per-mode backtest (thresholds frozen on validation). "
+                "Slow — runs the walk-forward. Writes outputs/decisions/mode_backtest.json.",
+        "params": [
+            {"name": "mode", "flag": "--mode", "type": "choice",
+             "choices": ["both", "smart", "high-return"], "default": "both"},
+            {"name": "val_start", "flag": "--val-start", "type": "date",
+             "default": "2024-08-01"},
+            {"name": "test_start", "flag": "--test-start", "type": "date",
+             "default": "2025-08-01"},
+        ],
+    },
+    {
+        "id": "build_market_profiles", "label": "Build market profiles",
+        "module": "scripts.build_market_profiles",
+        "desc": "Out-of-time validation profiles that gate every market. Slow. "
+                "Writes artifacts/market_profiles.json (loaded live, no restart).",
+        "params": [
+            {"name": "val_start", "flag": "--val-start", "type": "date",
+             "default": "2024-08-01"},
+            {"name": "test_start", "flag": "--test-start", "type": "date",
+             "default": "2025-08-01"},
+        ],
+    },
+    {
+        "id": "backtest_decisions", "label": "Backtest decisions (1X2)",
+        "module": "scripts.backtest_decisions",
+        "desc": "Chronological decision-rule backtest for the full engine. Slow.",
+        "params": [
+            {"name": "val_start", "flag": "--val-start", "type": "date",
+             "default": "2024-08-01"},
+            {"name": "test_start", "flag": "--test-start", "type": "date",
+             "default": "2025-08-01"},
+            {"name": "view", "flag": "--view", "type": "choice",
+             "choices": ["hybrid", "pure", "market"], "default": "hybrid"},
+        ],
+    },
+    {
+        "id": "run_backtest", "label": "Backtest models (scorecard)",
+        "module": "scripts.run_backtest",
+        "desc": "Walk-forward forecast-quality scorecard (log-loss / Brier / ECE). Slow.",
+        "params": [
+            {"name": "val_start", "flag": "--val-start", "type": "date",
+             "default": "2024-08-01"},
+            {"name": "test_start", "flag": "--test-start", "type": "date",
+             "default": "2025-08-01"},
+            {"name": "leagues", "flag": "--leagues", "type": "text", "default": ""},
+        ],
+    },
+    {
+        "id": "predict_upcoming", "label": "Predict upcoming",
+        "module": "scripts.predict_upcoming",
+        "desc": "Score the synced upcoming fixtures with the trained bundle (read-only).",
+        "params": [],
+    },
+    {
+        "id": "make_report", "label": "Make report",
+        "module": "scripts.make_report",
+        "desc": "Regenerate the markdown/plots report from the latest artifacts.",
+        "params": [],
+    },
+    {
+        "id": "bet_report", "label": "Paper-bet report",
+        "module": "scripts.bet_report",
+        "desc": "Analytics over the paper-bet ledger (P/L, reliability).",
+        "params": [
+            {"name": "reliability_bins", "flag": "--reliability-bins",
+             "type": "int", "default": 10},
+        ],
+    },
+]
+_TOOLS_BY_ID = {t["id"]: t for t in TOOLS}
+
+
+def _build_argv(tool: dict, params: dict) -> list:
+    """Turn validated params into an argv list (raises ValueError on bad input)."""
+    argv: list = []
+    for spec in tool["params"]:
+        raw = params.get(spec["name"])
+        if raw is None or raw == "":
+            continue
+        typ = spec["type"]
+        if typ == "int":
+            try:
+                val = str(int(raw))
+            except (TypeError, ValueError):
+                raise ValueError(f"{spec['name']} must be an integer")
+        elif typ == "choice":
+            if str(raw) not in spec["choices"]:
+                raise ValueError(f"{spec['name']} must be one of {spec['choices']}")
+            val = str(raw)
+        else:  # text / date — passed as a single argv token (no shell)
+            val = str(raw)
+        argv += [spec["flag"], val]
+    extra = (params.get("extra_args") or "").strip()
+    if extra:
+        argv += shlex.split(extra)   # tokens only; never a shell
+    return argv
+
+
+def _script_job(module: str, argv: list):
+    """Return a JobManager target that streams a subprocess's output to the log."""
+    def job(progress):
+        cmd = [sys.executable, "-u", "-m", module] + argv
+        progress(f"$ {' '.join(shlex.quote(c) for c in cmd)}")
+        env = dict(os.environ, PYTHONUNBUFFERED="1")
+        proc = subprocess.Popen(
+            cmd, cwd=os.path.dirname(os.path.abspath(__file__)),
+            stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True,
+            bufsize=1, env=env)
+        for line in proc.stdout:
+            progress(line.rstrip("\n"))
+        code = proc.wait()
+        if code != 0:
+            raise RuntimeError(f"{module} exited with code {code}")
+        progress(f"{module} finished (exit 0).")
+    return job
+
+
+@app.route("/api/tools")
+def api_tools():
+    """The whitelist of runnable scripts + their typed params (for the UI form)."""
+    return jsonify({"tools": TOOLS})
+
+
+@app.route("/api/tools/run", methods=["POST"])
+def api_tools_run():
+    d = request.get_json(silent=True) or {}
+    tool = _TOOLS_BY_ID.get(d.get("tool"))
+    if tool is None:
+        return jsonify({"error": "unknown tool"}), 400
+    try:
+        argv = _build_argv(tool, d.get("params") or {})
+    except ValueError as e:
+        return jsonify({"error": str(e)}), 400
+    if not JOBS.start(f"tool:{tool['id']}", _script_job(tool["module"], argv)):
+        return jsonify({"error": f"a {JOBS.kind} job is already running"}), 409
+    return jsonify({"started": True, "kind": f"tool:{tool['id']}"})
 
 
 @app.route("/api/job/status")
